@@ -11,7 +11,8 @@ a {
 }
 
 .btn-style-one .btn-title {
-    background-color: #7ea04d;
+    background-color: #6d9e0b;
+    /* background-color: #7ea04d; */
     /* background-color: #f42a2a; */
 }
 
@@ -77,12 +78,14 @@ a {
 }
 
 .main-header .header-upper .logo-box .logo {
-    background: #7ea04d;
+    background: #6d9e0b;
+    /* background: #7ea04d; */
     /* background: #f42a2a; */
 }
 
 .main-header .header-upper .logo-box .logo:before {
-    background: #7ea04d;
+    background: #6d9e0b;
+    /* background: #7ea04d; */
     /* background: #f42a2a; */
 }
 
@@ -352,7 +355,7 @@ a {
 }
 
 .service-block .icon-box:after {
-    background: #f42a2a;
+    background: #fc61b4;
 }
 
 .what-we-do .service-block:nth-child(1) .icon-box,
@@ -364,10 +367,9 @@ a {
 
 .what-we-do .service-block:nth-child(1) .icon-box:after,
 .services .service-block:nth-child(1) .icon-box:after,
-.what-we-do .service-block:nth-child(9) .icon-box:after,
 .services .service-block:nth-child(9) .icon-box:after {
+    /* background: #10ce2e; */
     background: #10ce2e;
-    /* background: #f42a2a; */
 }
 
 .what-we-do .service-block:nth-child(2) .icon-box,
@@ -381,8 +383,8 @@ a {
 .services .service-block:nth-child(2) .icon-box:after,
 .what-we-do .service-block:nth-child(10) .icon-box:after,
 .services .service-block:nth-child(10) .icon-box:after {
+    /* background: #00ffe7; */
     background: #00ffe7;
-    /* background: #ff6b70; */
 }
 
 .what-we-do .service-block:nth-child(3) .icon-box,
@@ -396,8 +398,8 @@ a {
 .services .service-block:nth-child(3) .icon-box:after,
 .what-we-do .service-block:nth-child(11) .icon-box:after,
 .services .service-block:nth-child(11) .icon-box:after {
-    background: #ff0000;
-    /* background: #21d7d9; */
+    /* background: #ff0000; */
+    background: #ff5831;
 }
 
 .what-we-do .service-block:nth-child(4) .icon-box,
@@ -411,8 +413,8 @@ a {
 .services .service-block:nth-child(4) .icon-box:after,
 .what-we-do .service-block:nth-child(12) .icon-box:after,
 .services .service-block:nth-child(12) .icon-box:after {
+    /* background: #ff8f00; */
     background: #ff8f00;
-    /* background: #f7a900; */
 }
 
 .what-we-do .service-block:nth-child(5) .icon-box,
@@ -440,7 +442,7 @@ a {
 .services .service-block:nth-child(6) .icon-box:after,
 .what-we-do .service-block:nth-child(14) .icon-box:after,
 .services .service-block:nth-child(14) .icon-box:after {
-    background: #7e61ff;
+    background: #f7d884;
 }
 
 .what-we-do .service-block:nth-child(7) .icon-box,
@@ -454,7 +456,7 @@ a {
 .services .service-block:nth-child(7) .icon-box:after,
 .what-we-do .service-block:nth-child(15) .icon-box:after,
 .services .service-block:nth-child(15) .icon-box:after {
-    background: #fc45b1;
+    background: #14a60f;
 }
 
 .what-we-do .service-block:nth-child(8) .icon-box,
@@ -521,7 +523,7 @@ a {
 }
 
 .main-footer .links-widget ul li a:hover {
-    color: #7ea04d;
+    color: #fe813a;
     /* color: #f42a2a; */
 }
 
@@ -909,7 +911,8 @@ a.ui-button:active,
 }
 
 .call-to-action-two {
-    background: #e9ac06;
+    background: #ff9933;
+    /* background: #e9ac06; */
 }
 
 .banner-carousel .slide-item .curved-layer:before {
@@ -1583,33 +1586,33 @@ a.ui-button:active,
 .theme-color-three a.ui-button:active,
 .theme-color-three .ui-button:active,
 .theme-color-three .ui-button.ui-state-active:hover {
-    background-color: #ff6b70;
-    border-color: #ff6b70;
+    background-color: #fe813a;
+    border-color: #fe813a;
 }
 
 .theme-color-three .recent-donors-section .owl-dots .owl-dot.active span {
-    border-color: #ff6b70;
+    border-color: #fe813a;
 }
 
 .theme-color-three .nav-outer .mobile-nav-toggler {
-    color: #ff6b70;
+    color: #fe813a;
 }
 
 .theme-color-three .mobile-menu .menu-backdrop {
-    background: #ff6b70;
+    background: #fe813a;
 }
 
 .theme-color-three .mobile-menu .navigation li.current > a,
 .mobile-menu .navigation li > a:hover {
-    color: #ff6b70;
+    color: #fe813a;
 }
 
 .theme-color-three .mobile-menu .navigation li.dropdown .dropdown-btn.open {
-    background-color: #ff6b70;
+    background-color: #fe813a;
 }
 
 .theme-color-three .mobile-menu .navigation li > a:before {
-    border-left: 5px solid #ff6b70;
+    border-left: 5px solid #fe813a;
 }
 
 .theme-color-three .mobile-menu .social-links li a:hover {

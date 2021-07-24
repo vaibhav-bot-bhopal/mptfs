@@ -38,7 +38,7 @@ return [
     'event_not_found' => 'No Events Found !!',
     'btn_view_event_cap' => 'View Event Detail',
     'btn_all_event_cap' => 'All Events',
-    'latest_news_heading' => 'Latest News',
+    'latest_news_heading' => 'MPTFS Media',
     'btn_all_news_cap' => 'All News',
     'news_not_found' => 'No News Found !!',
     'latest_article_heading' => 'Latest Article',

@@ -389,8 +389,8 @@ label:not(.form-check-label):not(.custom-file-label) {
 }
 
 .what-we-do .bg-color:before {
-    /* background: #d0ffb7; */
-    background: #48502b;
+    background: #351f39;
+    /* background: #48502b; */
 }
 
 .what-we-do.style-two .sec-title .h2-color {
@@ -466,5 +466,35 @@ img.lazy-image.loaded {
     .event-details .image-box {
         width: 60% !important;
         margin: 0 auto 50px !important;
+    }
+}
+
+/* Reponsive Logo */
+@media only screen and (max-width: 1023px) and (min-width: 300px) {
+    .main-header .header-upper .logo-box {
+        left: -270px;
+    }
+
+    .main-header .header-upper .logo img {
+        max-width: none;
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    .main-header .header-upper .logo-box .logo:before {
+        height: 50px;
+        width: 100%;
+        right: auto;
+        top: 110%;
+        margin-top: -44px;
+        left: 0;
+        bottom: -20px;
+        transform: rotate(355deg) !important;
+        border-radius: 20px;
+    }
+
+    .main-header .header-upper .logo-box .logo {
+        padding: 15px 30px;
+        border-radius: 0 0 10px 10px;
     }
 }

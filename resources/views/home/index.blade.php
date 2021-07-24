@@ -37,7 +37,7 @@
         }
 
         .custom-title{
-            padding: 15px 62px!important;
+            padding: 15px 50px!important;
         }
     </style>
 @endpush
@@ -74,7 +74,7 @@
 
 			<!-- Slide Item -->
             <div class="slide-item">
-            	<div class="image-layer lazy-image" data-bg="url('public/assets/images/mptfs-imgs/About-Us-Banner.jpg')"></div>
+                <div class="image-layer lazy-image" data-bg="url('public/assets/images/mptfs-imgs/About-Us-Banner.jpg')"></div>
 
                 <div class="auto-container">
                     <div class="content-box">
@@ -90,7 +90,7 @@
 
     <!--About Section-->
     <section class="about-section style-two">
-    	<div class="top-rotten-curve"></div>
+        <div class="top-rotten-curve"></div>
         <div class="upper-boxes">
             <div class="auto-container">
                 <div class="row clearfix">
@@ -118,12 +118,12 @@
             </div>
         </div>
         <div class="auto-container">
-        	<div class="row clearfix">
-            	<!--Left Column-->
+            <div class="row clearfix">
+                <!--Left Column-->
                 <div class="left-column col-lg-6 col-md-12 col-sm-12">
-                	<div class="inner">
-                    	<div class="sec-title">
-                        	<div class="sub-title">{{__('home.about_heading')}}</div>
+                    <div class="inner">
+                        <div class="sec-title">
+                            <div class="sub-title">{{__('home.about_heading')}}</div>
                             <h2>{{__('home.about_h2_part_1')}}<br>{{__('home.about_h2_part_2')}}</h2>
                             <div class="text text-justify">{{__('home.about_para')}}</div>
 							<div class="link-box clearfix"><a href="{{route('mptfs.ptiger')}}" class="theme-btn btn-style-one"><span class="btn-title">{{__('home.about_btn_cap')}}</span></a></div>
@@ -132,9 +132,9 @@
                 </div>
                 <!--Right Column-->
                 <div class="right-column col-lg-6 col-md-12 col-sm-12">
-                	<div class="inner">
-                    	<div class="images clearfix">
-                        	<figure class="image wow fadeInUp" data-wow-delay="0ms"><img class="lazy-image" src="{{asset('public/assets/images/mptfs-imgs/Project-Tiger-Neeche.jpg')}}" data-src="{{asset('public/assets/images/mptfs-imgs/Project-Tiger-Neeche.jpg')}}" alt=""></figure>
+                    <div class="inner">
+                        <div class="images clearfix">
+                            <figure class="image wow fadeInUp" data-wow-delay="0ms"><img class="lazy-image" src="{{asset('public/assets/images/mptfs-imgs/Project-Tiger-Neeche.jpg')}}" data-src="{{asset('public/assets/images/mptfs-imgs/Project-Tiger-Neeche.jpg')}}" alt=""></figure>
                         </div>
                     </div>
                 </div>
@@ -148,10 +148,10 @@
         {{-- <div class="bottom-rotten-curve"></div> --}}
 
         <div class="auto-container">
-        	<div class="row clearfix">
-            	<div class="title-column col-xl-6 col-lg-12 col-sm-12">
-                	<div class="inner">
-                    	<div class="sec-title">
+            <div class="row clearfix">
+                <div class="title-column col-xl-6 col-lg-12 col-sm-12">
+                    <div class="inner">
+                        <div class="sec-title">
                             {{-- <div class="sub-title">What We Do?</div> --}}
                             <h2>
                                 {{__('home.non_profit_h1_1')}}<br>
@@ -216,7 +216,7 @@
                         </div>
 
                     </div>
-            	</div>
+                </div>
             </div>
 
         </div>
@@ -333,18 +333,18 @@
 
         <div class="auto-container">
 
-        	<div class="title-box clearfix">
+            <div class="title-box clearfix">
                 <div class="sec-title">
-                    <div class="sub-title">Mildstones</div>
-                    <h2>Our Mildstones</h2>
+                    <div class="sub-title">Milestones</div>
+                    <h2>Our Milestones</h2>
                 </div>
 
                 <div class="text">Lorem ipsum dolor amet consectetur adipisicing elit sed eiusmod tempor incidi.</div>
             </div>
 
             <!--Team Carousel-->
-        	<div class="team-carousel love-carousel owl-theme owl-carousel" data-options='{"loop": true, "margin": 30, "autoheight":true, "lazyload":true, "nav": true, "dots": true, "autoplay": true, "autoplayTimeout": 5000, "smartSpeed": 500, "responsive":{ "0" :{ "items": "1" },"600" :{ "items": "1" }, "800" :{ "items" : "2" }, "1024":{ "items" : "3" }, "1366":{ "items" : "3" }}}'>
-            	<div class="slide-item">
+            <div class="team-carousel love-carousel owl-theme owl-carousel" data-options='{"loop": true, "margin": 30, "autoheight":true, "lazyload":true, "nav": true, "dots": true, "autoplay": true, "autoplayTimeout": 5000, "smartSpeed": 500, "responsive":{ "0" :{ "items": "1" },"600" :{ "items": "1" }, "800" :{ "items" : "2" }, "1024":{ "items" : "3" }, "1366":{ "items" : "3" }}}'>
+                <div class="slide-item">
                     <!--Team Block-->
                     <div class="team-block">
                         <div class="inner-box">
@@ -479,7 +479,7 @@
 
     <!--Call To Action Section-->
     <section class="call-to-action">
-    	<!--Image Layer-->
+        <!--Image Layer-->
 		<div class="image-layer lazy-image" data-bg="url('public/assets/images/main-slider/devendra (8).jpg')"></div>
 
         <div class="auto-container">
@@ -489,7 +489,7 @@
                     <div class="text">{{__('home.help_para')}}</div>
                     <div class="link-box clearfix">
                         <a href="https://mptiger.mponline.gov.in/" target="_blank" class="theme-btn btn-style-three"><span class="btn-title">{{__('home.btn_donate_cap')}}</span></a>
-                        <a href="#" class="theme-btn btn-style-one"><span class="btn-title custom-title">{{__('home.btn_join_cap_1')}} <i class="fa fa-heart" style="font-size: 20px; position: relative; top: 2px; margin: 0 5px;"></i> {{__('home.btn_join_cap_2')}}</span></a>
+                        <a href="{{ route('love') }}" class="theme-btn btn-style-one"><span class="btn-title custom-title">{{__('home.btn_join_cap_1')}} <i class="fa fa-heart" style="font-size: 20px; position: relative; top: 2px; margin: 0 5px;"></i> {{__('home.btn_join_cap_2')}}</span></a>
                         <a href="{{ route('support') }}" class="theme-btn btn-style-three"><span class="btn-title">{{__('home.btn_know_more')}}</span></a>
                     </div>
                 </div>
@@ -522,7 +522,7 @@
                             <div class="lower-content">
                                 <h3><a href="{{ route('news.detail', $news->slug) }}">{{ Str::limit($news->title, '25') }}</a></h3>
                                 <div class="text">{!! Str::limit($news->discription, '80') !!}</div>
-                                <div class="link text-center"><a href="{{ route('news.detail', $news->slug) }}" class="theme-btn btn-style-one"><span class="btn-title">{{__('home.about_btn_cap')}}</span></a></div>
+                                <div class="link text-left"><a href="{{ route('news.detail', $news->slug) }}" class="theme-btn btn-style-one"><span class="btn-title">{{__('home.about_btn_cap')}}</span></a></div>
                             </div>
                         </div>
                     </div>
@@ -565,7 +565,7 @@
                             <div class="lower-content">
                                 <h3><a href="{{ route('news.detail', $news->slug) }}">{{ Str::limit($news->title, '25') }}</a></h3>
                                 <div class="text">{!! Str::limit($news->discription, '80') !!}</div>
-                                <div class="link text-center"><a href="{{ route('news.detail', $news->slug) }}" class="theme-btn btn-style-one"><span class="btn-title">{{__('home.about_btn_cap')}}</span></a></div>
+                                <div class="link text-left"><a href="{{ route('news.detail', $news->slug) }}" class="theme-btn btn-style-one"><span class="btn-title">{{__('home.about_btn_cap')}}</span></a></div>
                             </div>
                         </div>
                     </div>

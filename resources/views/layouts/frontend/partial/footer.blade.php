@@ -17,7 +17,7 @@
 <section class="call-to-action-two">
     <div class="auto-container">
         <div class="inner clearfix">
-            <div class="title-box wow fadeInLeft" data-wow-delay="0ms"><h2>{{__('footer.become_volunteer_heading')}}</h2></div>
+            <div class="title-box wow fadeInLeft" data-wow-delay="0ms"><h2 style="color: #1e2436;">{{__('footer.become_volunteer_heading')}}</h2></div>
             <div class="link-box wow fadeInRight" data-wow-delay="0ms"><a href="#" class="theme-btn btn-style-five"><span class="btn-title">{{__('footer.btn_get_involved_cap')}}</span></a></div>
         </div>
     </div>
@@ -25,7 +25,7 @@
 <!--End Gallery Section -->
 
 <!-- Main Footer -->
-<div class="footer-curve" style="background: #e9ac06; width:100%; display:flex; justify-content:center;">
+<div class="footer-curve" style="background: #ff9933; width:100%; display:flex; justify-content:center;">
     <img src="{{asset('public/assets/images/bottom.png')}}" alt="">
 </div>
 

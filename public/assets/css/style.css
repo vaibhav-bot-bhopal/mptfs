@@ -276,7 +276,7 @@ figure {
     position: relative;
     display: block;
     z-index: 1;
-    padding: 15px 45px;
+    padding: 15px 30px;
     border-radius: 30px;
     transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
@@ -2727,8 +2727,8 @@ img {
     width: 70px;
     height: 70px;
     border-radius: 50%;
-    opacity: 0.2;
-    /* opacity: 1; */
+    opacity: 0.1;
+    /* opacity: 0.2; */
     -webkit-transition: all 500ms ease;
     -ms-transition: all 500ms ease;
     -o-transition: all 500ms ease;

@@ -29,4 +29,12 @@ return [
     'bank__li8' => 'Email: mptigerfoundation@mp.gov.in',
     'bank__li9' => 'Website: www.mptigerfoundation.org',
     'partners_heading' => 'Our Partners',
+    'love_main_heading' => 'I Love Wildlife',
+    'love_heading_1' => 'I',
+    'love_heading_2' => 'Wildlife',
+    'love_heading_pay' => 'NOW YOU CAN DONATE THROUGH UPI PAYMENT',
+    'love_para' => 'Now you can contribute for the conservation of tiger  along with other wildlife & their habitats across Madhya Pradesh by contributing/donating to the Madhya Pradesh tiger foundation society which is a society found by Madhya Pradesh forest department to ensure protection of the wildlife by engaging private partners and other helping hands other than government support. You just need to scan the above “QR code” by using any UPI QR code scanner & contribute for the noble cause.',
+    'heart_btn_1' => 'To Donate Through',
+    'heart_btn_2' => 'Click the Button'
+
 ];

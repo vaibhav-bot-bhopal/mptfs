@@ -141,6 +141,7 @@ Route::prefix('our-work')->group(function () {
 
 Route::prefix('get-involved')->group(function () {
     Route::get('support', [GetInvolvedController::class, 'support'])->name('support');
+    Route::get('love', [GetInvolvedController::class, 'love'])->name('love');
     Route::get('our-partners', [GetInvolvedController::class, 'partners'])->name('mptfs.partners');
 });
 

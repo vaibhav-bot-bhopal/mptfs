@@ -51,7 +51,7 @@
             <div class="inner-container clearfix">
                 <!--Logo-->
                 <div class="logo-box">
-                    <div class="logo"><a href="{{ url('/') }}"><img src="{{asset('public/assets/images/logo.png')}}" alt="MPTFS Logo" title="MPTFS Logo"></a></div>
+                    <div class="logo"><a href="{{ url('/') }}"><img src="{{asset('public/assets/images/logo-main.png')}}" alt="MPTFS Logo" title="MPTFS Logo"></a></div>
                 </div>
 
                 <!--Nav Box-->
@@ -83,6 +83,7 @@
                                 <li class="dropdown"><a>{{__('navbar.menu_get_involved')}}</a>
                                     <ul>
                                         <li><a href="{{ url('get-involved/support') }}">{{__('navbar.menu_support')}}</a></li>
+                                        <li><a href="{{ url('get-involved/love') }}" target="_blank">{{__('navbar.menu_love')}}</a></li>
                                         <li><a href="https://mptiger.mponline.gov.in/" target="_blank">{{__('navbar.menu_donate')}}</a></li>
                                         {{-- <li><a href="{{ url('/') }}">{{__('navbar.menu_volunteer')}}</a></li> --}}
                                         <li><a href="{{ url('get-involved/our-partners') }}">{{__('navbar.menu_partners')}}</a></li>
@@ -99,6 +100,7 @@
                                 <li class="dropdown"><a>{{__('navbar.menu_gallery')}}</a>
                                     <ul>
                                         <li><a href="{{ url('home/gallery') }}">{{__('navbar.menu_photos')}}</a></li>
+                                        <li><a href="{{ url('news-corner/downloads') }}">{{__('navbar.menu_downloads')}}</a></li>
                                         {{-- <li><a href="{{ url('/') }}">{{__('navbar.menu_video')}}</a></li> --}}
                                     </ul>
                                 </li>

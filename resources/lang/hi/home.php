@@ -38,7 +38,7 @@ return [
     'event_not_found' => 'कोई इवेंट नहीं मिला !!',
     'btn_view_event_cap' => 'इवेंट को विस्तार से देखें',
     'btn_all_event_cap' => 'सभी इवेंट देखें',
-    'latest_news_heading' => 'ताजा खबर',
+    'latest_news_heading' => 'एमपीटीएफएस मीडिया',
     'btn_all_news_cap' => 'सभी समाचार देखें',
     'news_not_found' => 'कोई खबर नहीं मिली !!',
     'latest_article_heading' => 'नवीनतम लेख',

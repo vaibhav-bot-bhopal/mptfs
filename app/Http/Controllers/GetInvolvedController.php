@@ -15,4 +15,9 @@ class GetInvolvedController extends Controller
     {
         return view('get-involved.partners');
     }
+
+    public function love()
+    {
+        return view('get-involved.love');
+    }
 }

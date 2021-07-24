@@ -46,6 +46,9 @@
                                     <div class="lower-content">
                                         <h3><a href="{{ route('awareness.detail', $aware->slug) }}">{{ Str::limit($aware->title, '25') }}</a></h3>
                                         <div class="text">{!! Str::limit($aware->discription, '80') !!}</div>
+                                        <div class="link text-left">
+                                            <a href="{{ route('awareness.detail', $aware->slug) }}" class="theme-btn btn-style-one"><span class="btn-title">{{__('home.about_btn_cap')}}</span></a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -131,6 +134,9 @@
                                     <div class="lower-content">
                                         <h3><a href="{{ route('awareness.detail', $aware->slug) }}">{{ Str::limit($aware->title, '25') }}</a></h3>
                                         <div class="text">{!! Str::limit($aware->discription, '80') !!}</div>
+                                        <div class="link text-left">
+                                            <a href="{{ route('awareness.detail', $aware->slug) }}" class="theme-btn btn-style-one"><span class="btn-title">{{__('home.about_btn_cap')}}</span></a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
