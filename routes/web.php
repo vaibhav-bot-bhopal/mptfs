@@ -10,6 +10,7 @@ use App\Http\Controllers\Admin\DashboardController as AdminDashboardController;
 use App\Http\Controllers\Admin\SettingsController;
 use App\Http\Controllers\Admin\AuthorController;
 use App\Http\Controllers\Admin\UserController;
+use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Author\DashboardController as AuthorDashboardController;
 use App\Http\Controllers\Author\SettingsController as AuthorSettingsController;
 use App\Http\Controllers\AwarenessController;
@@ -46,6 +47,7 @@ Route::get('language/{lang}', function ($lang) {
 })->middleware('language');
 
 Route::get('/', [WelcomeController::class, 'index'])->name('mptfs.home')->middleware('language');
+Route::match(['get', 'post'], '/logout', [LoginController::class, 'logout'])->name('logout');
 
 Auth::routes();
 

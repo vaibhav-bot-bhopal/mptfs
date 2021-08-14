@@ -45,14 +45,14 @@ class WelcomeController extends Controller
     // View Gallery
     public function gallery()
     {
-        $photos = Gallery::orderBy('original_filename', 'DESC')->paginate(6);
+        $photos = Gallery::orderBy('original_filename', 'DESC')->paginate(12);
         return view('home.gallery', compact('photos'));
     }
 
     // View Gallery
     public function downloads()
     {
-        $photos = Download::orderBy('original_filename', 'DESC')->paginate(6);
+        $photos = Download::orderBy('original_filename', 'DESC')->paginate(12);
         return view('news.downloads', compact('photos'));
     }
 }

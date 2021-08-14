@@ -462,6 +462,10 @@ img.lazy-image.loaded {
     color: #ffffff;
 }
 
+.invalid-feedback {
+    font-size: 85%;
+}
+
 @media only screen and (min-width: 768px) {
     .event-details .image-box {
         width: 60% !important;

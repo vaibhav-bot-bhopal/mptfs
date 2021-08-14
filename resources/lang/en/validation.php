@@ -130,9 +130,16 @@ return [
     |
     */
 
+    // 'custom' => [
+    //     'attribute-name' => [
+    //         'rule-name' => 'custom-message',
+    //     ],
+    // ],
+
     'custom' => [
-        'attribute-name' => [
-            'rule-name' => 'custom-message',
+        'm_image.*' => [
+            'image' => 'The images field must be an image.',
+            'mimes' => 'The images field must be a file of type: :values.',
         ],
     ],
 

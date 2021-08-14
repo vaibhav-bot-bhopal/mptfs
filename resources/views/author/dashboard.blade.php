@@ -41,7 +41,7 @@
                             <div class="icon">
                             <i class="ion ion-bag"></i>
                             </div>
-                            <a href="{{route('author.post.index')}}" class="small-box-footer">View Total Post <i class="fas fa-arrow-circle-right"></i></a>
+                            <a href="{{route('author.post.index')}}" class="small-box-footer">View Post <i class="fas fa-arrow-circle-right"></i></a>
                         </div>
                     </div>
                     <!-- ./col -->
@@ -71,7 +71,7 @@
                             <div class="icon">
                             <i class="ion ion-pie-graph"></i>
                             </div>
-                            <a href="{{route('author.post.index')}}" class="small-box-footer">View Total Views <i class="fas fa-arrow-circle-right"></i></a>
+                            <a href="{{route('author.post.index')}}" class="small-box-footer">View Views <i class="fas fa-arrow-circle-right"></i></a>
                         </div>
                     </div>
                     <!-- ./col -->
@@ -147,7 +147,7 @@
                             <div class="icon">
                             <i class="ion ion-pie-graph"></i>
                             </div>
-                            <a href="{{route('author.post.index')}}" class="small-box-footer">व्यू टोटल व्यूज <i class="fas fa-arrow-circle-right"></i></a>
+                            <a href="{{route('author.post.index')}}" class="small-box-footer">व्यू व्यूज <i class="fas fa-arrow-circle-right"></i></a>
                         </div>
                     </div>
                     <!-- ./col -->

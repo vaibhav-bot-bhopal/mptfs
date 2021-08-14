@@ -24,11 +24,12 @@ return [
     'menu_partners' => 'अनुमानित साथी',
     'menu_news_corner' => 'सूचना कॉर्नर',
     'menu_our_blog' => 'हमारा ब्लॉग',
-    'menu_latest_news' => 'नवीनतम समाचार',
+    'menu_latest_news' => 'एमपीटीएफएस मीडिया',
     'menu_latest_events' => 'नवीनतम कार्यक्रम',
     'menu_downloads' => 'डाउनलोड',
     'menu_gallery' => 'गैलरी',
     'menu_photos' => 'तस्वीरें',
     'menu_video' => 'वीडियो',
     'menu_contact_us' => 'संपर्क करें',
+    'menu_quiz_result' => 'प्रश्नोत्तरी परिणाम',
 ];

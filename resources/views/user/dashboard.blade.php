@@ -55,7 +55,7 @@
                                             <div class="icon">
                                             <i class="ion ion-stats-bars"></i>
                                             </div>
-                                            <a href="{{ route('user.news.index') }}" class="small-box-footer">View Total News <i class="fas fa-arrow-circle-right"></i></a>
+                                            <a href="{{ route('user.news.index') }}" class="small-box-footer">View News <i class="fas fa-arrow-circle-right"></i></a>
                                         </div>
                                     </div>
                                     <!-- ./col -->
@@ -70,7 +70,7 @@
                                             <div class="icon">
                                             <i class="ion ion-bag"></i>
                                             </div>
-                                            <a href="{{ route('user.event.index') }}" class="small-box-footer">View Total Event's <i class="fas fa-arrow-circle-right"></i></a>
+                                            <a href="{{ route('user.event.index') }}" class="small-box-footer">View Event's <i class="fas fa-arrow-circle-right"></i></a>
                                         </div>
                                     </div>
                                     <!-- ./col -->
@@ -85,7 +85,7 @@
                                             <div class="icon">
                                             <i class="ion ion-bag"></i>
                                             </div>
-                                            <a href="{{ route('user.awareness.index') }}" class="small-box-footer">View Total Awareness <i class="fas fa-arrow-circle-right"></i></a>
+                                            <a href="{{ route('user.awareness.index') }}" class="small-box-footer">View Awareness <i class="fas fa-arrow-circle-right"></i></a>
                                         </div>
                                     </div>
                                     <!-- ./col -->
@@ -100,7 +100,7 @@
                                             <div class="icon">
                                             <i class="ion ion-bag"></i>
                                             </div>
-                                            <a href="{{ route('user.awareness.index') }}" class="small-box-footer">View Total Galleries <i class="fas fa-arrow-circle-right"></i></a>
+                                            <a href="{{ route('user.awareness.index') }}" class="small-box-footer">View Galleries <i class="fas fa-arrow-circle-right"></i></a>
                                         </div>
                                     </div>
                                     <!-- ./col -->
@@ -167,7 +167,7 @@
                                             <div class="icon">
                                             <i class="ion ion-stats-bars"></i>
                                             </div>
-                                            <a href="{{ route('user.news.index') }}" class="small-box-footer">व्यू टोटल न्यूज़ <i class="fas fa-arrow-circle-right"></i></a>
+                                            <a href="{{ route('user.news.index') }}" class="small-box-footer">व्यू न्यूज़ <i class="fas fa-arrow-circle-right"></i></a>
                                         </div>
                                     </div>
                                     <!-- ./col -->
@@ -182,7 +182,7 @@
                                             <div class="icon">
                                             <i class="ion ion-bag"></i>
                                             </div>
-                                            <a href="{{ route('user.event.index') }}" class="small-box-footer">व्यू टोटल इवेंट्स <i class="fas fa-arrow-circle-right"></i></a>
+                                            <a href="{{ route('user.event.index') }}" class="small-box-footer">व्यू इवेंट्स <i class="fas fa-arrow-circle-right"></i></a>
                                         </div>
                                     </div>
                                     <!-- ./col -->
@@ -197,7 +197,7 @@
                                             <div class="icon">
                                             <i class="ion ion-bag"></i>
                                             </div>
-                                            <a href="{{ route('user.awareness.index') }}" class="small-box-footer">व्यू टोटल अवेयरनेस <i class="fas fa-arrow-circle-right"></i></a>
+                                            <a href="{{ route('user.awareness.index') }}" class="small-box-footer">व्यू अवेयरनेस <i class="fas fa-arrow-circle-right"></i></a>
                                         </div>
                                     </div>
                                     <!-- ./col -->
@@ -212,7 +212,7 @@
                                             <div class="icon">
                                             <i class="ion ion-bag"></i>
                                             </div>
-                                            <a href="{{ route('user.awareness.index') }}" class="small-box-footer">व्यू टोटल गैलरीज <i class="fas fa-arrow-circle-right"></i></a>
+                                            <a href="{{ route('user.awareness.index') }}" class="small-box-footer">व्यू गैलरीज <i class="fas fa-arrow-circle-right"></i></a>
                                         </div>
                                     </div>
                                     <!-- ./col -->

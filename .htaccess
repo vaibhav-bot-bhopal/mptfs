@@ -20,7 +20,7 @@
     RewriteRule ^ index.php [L]
 
     #Error Documents
-    ErrorDocument 403 /mptigerfoundation.org/errors/403.php
+    ErrorDocument 403 /mptfs.org/errors/403.php
     RewriteCond %{REQUEST_URI} !/(?:public|assets|js|css|images|errors|)/
 
     <Files .env>

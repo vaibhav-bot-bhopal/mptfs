@@ -5,7 +5,7 @@
 @section('content')
 
 <div class="register-box">
-    <div class="card card-outline card-primary">
+    <div class="card card-outline card-primary mt-4 mb-4">
         <div class="logo text-center mt-2">
             <img src="{{asset('public/assets/images/MPTFS-LOGO.png')}}" alt="MPTFS-LOGO" width="80" height="80">
         </div>

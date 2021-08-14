@@ -51,7 +51,7 @@
             <div class="inner-container clearfix">
                 <!--Logo-->
                 <div class="logo-box">
-                    <div class="logo"><a href="{{ url('/') }}"><img src="{{asset('public/assets/images/logo-main.png')}}" alt="MPTFS Logo" title="MPTFS Logo"></a></div>
+                    <div class="logo"><a href="{{ url('/') }}"><img src="{{asset('public/assets/images/logo-main.png')}}" alt="MPTFS-Logo" title="MPTFS-Logo"></a></div>
                 </div>
 
                 <!--Nav Box-->
@@ -105,6 +105,7 @@
                                     </ul>
                                 </li>
                                 <li class="{{ 'home/contact' == request()->path() ? 'current ' : '' }}"><a href="{{ url('home/contact') }}">{{__('navbar.menu_contact_us')}}</a></li>
+                                <li><a href="{{asset('public/mptfs-quiz')}}" target="_blank" style="color: #ff5831;">{{__('navbar.menu_quiz_result')}}</a></li>
                             </ul>
                         </div>
                     </nav>
@@ -120,7 +121,7 @@
         <div class="auto-container clearfix">
             <!--Logo-->
             <div class="logo pull-left">
-                <a href="#" title=""><img src="{{asset('public/assets/images/sticky-logo.png')}}" alt="" title=""></a>
+                <a href="#" title=""><img src="{{asset('public/assets/images/sticky-logo.png')}}" alt="MPTFS-Logo" title=""></a>
             </div>
             <!--Right Col-->
             <div class="pull-right">
@@ -138,7 +139,7 @@
         <div class="close-btn"><span class="icon flaticon-cancel"></span></div>
 
         <nav class="menu-box">
-            <div class="nav-logo"><a href="{{route('mptfs.home')}}"><img src="{{asset('public/assets/images/logo.png')}}" alt="" title=""></a></div>
+            <div class="nav-logo"><a href="{{route('mptfs.home')}}"><img src="{{asset('public/assets/images/logo.png')}}" alt="MPTFS-Logo" title=""></a></div>
             <div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--></div>
             <!--Social Links-->
             <div class="social-links">

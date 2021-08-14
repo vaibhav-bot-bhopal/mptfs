@@ -241,7 +241,7 @@
                                 <div class="row clearfix">
                                     <div class="title-column col-lg-6 col-md-12 col-sm-12">
                                         <div class="inner">
-                                            <div class="image-box"><a href="#"><img class="lazy-image" src="{{asset('public/assets/images/main-slider/devendra (8).jpg')}}" data-src="{{asset('public/storage/event-english/'.$event->image)}}" alt=""></a></div>
+                                            <div class="image-box"><a href="{{route('event.detail', $event->slug)}}"><img class="lazy-image" src="{{asset('public/assets/images/main-slider/devendra (8).jpg')}}" data-src="{{asset('public/storage/event-english/'.$event->image)}}" alt=""></a></div>
                                             <div class="title"><h3><a href="{{route('event.detail', $event->slug)}}">{{Str::limit($event->title, '25')}}</a></h3></div>
                                         </div>
                                     </div>
@@ -588,7 +588,6 @@
         <!--Article Section-->
         <section class="news-section" style="background-color: #edf1f5;">
             <div class="top-rotten-curve"></div>
-            <div class="bottom-rotten-curve1" style="position: absolute; left: 0; bottom: 0px; width: 100%; height: 20px; background: url({{ asset('public/assets/images/background/rotten-curve-8.png') }}) center bottom no-repeat; background-size: 100% 100%; z-index: 1;"></div>
             <div class="auto-container">
 
                 <div class="title-box clearfix">
@@ -641,7 +640,6 @@
         <!--Article Section-->
         <section class="news-section" style="background-color: #edf1f5;">
             <div class="top-rotten-curve"></div>
-            <div class="bottom-rotten-curve1" style="position: absolute; left: 0; bottom: 0px; width: 100%; height: 20px; background: url({{ asset('public/assets/images/background/rotten-curve-8.png') }}) center bottom no-repeat; background-size: 100% 100%; z-index: 1;"></div>
             <div class="auto-container">
 
                 <div class="title-box clearfix">
@@ -686,6 +684,496 @@
                     @endforelse
 
                 </div>
+
+            </div>
+        </section>
+    @endif
+
+    @if (session('locale') == 'en')
+        <!--Partners Carousel Section-->
+        <section class="team-carousel-section no-padding-top">
+            <div class="bottom-rotten-curve1" style="position: absolute; left: 0; bottom: 0px; width: 100%; height: 20px; background: url({{ asset('public/assets/images/background/rotten-curve-8.png') }}) center bottom no-repeat; background-size: 100% 100%; z-index: 1;"></div>
+            <div class="auto-container">
+
+                <div class="title-box clearfix">
+                    <div class="sec-title">
+                        <h2>Our Partners</h2>
+                    </div>
+                </div>
+
+                <!--Team Carousel-->
+                <div class="team-carousel love-carousel owl-theme owl-carousel" data-options='{"loop": true, "margin": 30, "autoheight":true, "lazyload":true, "nav": true, "dots": true, "autoplay": true, "autoplayTimeout": 5000, "smartSpeed": 500, "responsive":{ "0" :{ "items": "1" },"600" :{ "items": "1" }, "800" :{ "items" : "2" }, "1024":{ "items" : "3" }, "1366":{ "items" : "3" }}}'>
+                    <div class="slide-item">
+                        <!--Team Block-->
+                        <div class="team-block">
+                            <div class="inner-box">
+                                <figure class="image-box"><a href="#"><img src="{{asset('public/assets/images/partners/Blueocean.jpg')}}" alt=""></a></figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <!--Team Block-->
+                        <div class="team-block">
+                            <div class="inner-box">
+                                <figure class="image-box"><a href="#"><img src="{{asset('public/assets/images/partners/bhel.jpg')}}" alt=""></a></figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <!--Team Block-->
+                        <div class="team-block">
+                            <div class="inner-box">
+                                <figure class="image-box"><a href="#"><img src="{{asset('public/assets/images/partners/bank-of-baroda.jpg')}}" alt=""></a></figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <!--Team Block-->
+                        <div class="team-block">
+                            <div class="inner-box">
+                                <figure class="image-box"><a href="#"><img src="{{asset('public/assets/images/partners/sbi.jpg')}}" alt=""></a></figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <!--Team Block-->
+                        <div class="team-block">
+                            <div class="inner-box">
+                                <figure class="image-box"><a href="#"><img src="{{asset('public/assets/images/partners/dena-bank.jpg')}}" alt=""></a></figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <!--Team Block-->
+                        <div class="team-block">
+                            <div class="inner-box">
+                                <figure class="image-box"><a href="#"><img src="{{asset('public/assets/images/partners/pata-nahi.jpg')}}" alt=""></a></figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <!--Team Block-->
+                        <div class="team-block">
+                            <div class="inner-box">
+                                <figure class="image-box"><a href="#"><img src="{{asset('public/assets/images/partners/ressurect-books.jpg')}}" alt=""></a></figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <!--Team Block-->
+                        <div class="team-block">
+                            <div class="inner-box">
+                                <figure class="image-box"><a href="#"><img src="{{asset('public/assets/images/partners/birla-gold.jpg')}}" alt=""></a></figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <!--Team Block-->
+                        <div class="team-block">
+                            <div class="inner-box">
+                                <figure class="image-box"><a href="#"><img src="{{asset('public/assets/images/partners/db.jpg')}}" alt=""></a></figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <!--Team Block-->
+                        <div class="team-block">
+                            <div class="inner-box">
+                                <figure class="image-box"><a href="#"><img src="{{asset('public/assets/images/partners/Jaypee.jpg')}}" alt=""></a></figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <!--Team Block-->
+                        <div class="team-block">
+                            <div class="inner-box">
+                                <figure class="image-box"><a href="#"><img src="{{asset('public/assets/images/partners/MP.jpg')}}" alt=""></a></figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <!--Team Block-->
+                        <div class="team-block">
+                            <div class="inner-box">
+                                <figure class="image-box"><a href="#"><img src="{{asset('public/assets/images/partners/hcl.jpg')}}" alt=""></a></figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <!--Team Block-->
+                        <div class="team-block">
+                            <div class="inner-box">
+                                <figure class="image-box"><a href="#"><img src="{{asset('public/assets/images/partners/idfc.jpg')}}" alt=""></a></figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <!--Team Block-->
+                        <div class="team-block">
+                            <div class="inner-box">
+                                <figure class="image-box"><a href="#"><img src="{{asset('public/assets/images/partners/IIFM.jpg')}}" alt=""></a></figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <!--Team Block-->
+                        <div class="team-block">
+                            <div class="inner-box">
+                                <figure class="image-box"><a href="#"><img src="{{asset('public/assets/images/partners/jehanuma.jpg')}}" alt=""></a></figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <!--Team Block-->
+                        <div class="team-block">
+                            <div class="inner-box">
+                                <figure class="image-box"><a href="#"><img src="{{asset('public/assets/images/partners/primal.jpg')}}" alt=""></a></figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <!--Team Block-->
+                        <div class="team-block">
+                            <div class="inner-box">
+                                <figure class="image-box"><a href="#"><img src="{{asset('public/assets/images/partners/pugdandi.jpg')}}" alt=""></a></figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <!--Team Block-->
+                        <div class="team-block">
+                            <div class="inner-box">
+                                <figure class="image-box"><a href="#"><img src="{{asset('public/assets/images/partners/saving-tiger.jpg')}}" alt=""></a></figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <!--Team Block-->
+                        <div class="team-block">
+                            <div class="inner-box">
+                                <figure class="image-box"><a href="#"><img src="{{asset('public/assets/images/partners/taj-safari.jpg')}}" alt=""></a></figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <!--Team Block-->
+                        <div class="team-block">
+                            <div class="inner-box">
+                                <figure class="image-box"><a href="#"><img src="{{asset('public/assets/images/partners/the-guardbook.jpg')}}" alt=""></a></figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <!--Team Block-->
+                        <div class="team-block">
+                            <div class="inner-box">
+                                <figure class="image-box"><a href="#"><img src="{{asset('public/assets/images/partners/the-last-wilderness.jpg')}}" alt=""></a></figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <!--Team Block-->
+                        <div class="team-block">
+                            <div class="inner-box">
+                                <figure class="image-box"><a href="#"><img src="{{asset('public/assets/images/partners/the-royal-bank-of-sctlnd.jpg')}}" alt=""></a></figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <!--Team Block-->
+                        <div class="team-block">
+                            <div class="inner-box">
+                                <figure class="image-box"><a href="#"><img src="{{asset('public/assets/images/partners/tiger-films.jpg')}}" alt=""></a></figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <!--Team Block-->
+                        <div class="team-block">
+                            <div class="inner-box">
+                                <figure class="image-box"><a href="#"><img src="{{asset('public/assets/images/partners/Traffic.jpg')}}" alt=""></a></figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <!--Team Block-->
+                        <div class="team-block">
+                            <div class="inner-box">
+                                <figure class="image-box"><a href="#"><img src="{{asset('public/assets/images/partners/wildlife-consrv.jpg')}}" alt=""></a></figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <!--Team Block-->
+                        <div class="team-block">
+                            <div class="inner-box">
+                                <figure class="image-box"><a href="#"><img src="{{asset('public/assets/images/partners/wildlife-trust-india.jpg')}}" alt=""></a></figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <!--Team Block-->
+                        <div class="team-block">
+                            <div class="inner-box">
+                                <figure class="image-box"><a href="#"><img src="{{asset('public/assets/images/partners/wwf.jpg')}}" alt=""></a></figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <!--Team Block-->
+                        <div class="team-block">
+                            <div class="inner-box">
+                                <figure class="image-box"><a href="#"><img src="{{asset('public/assets/images/partners/adit-jain.jpg')}}" alt=""></a></figure>
+                            </div>
+                        </div>
+                    </div>
+
+                </div><!--End Team Carousel-->
+
+            </div>
+        </section>
+    @endif
+
+    @if (session('locale') == 'hi')
+        <!--Partners Carousel Section-->
+        <section class="team-carousel-section no-padding-top">
+            <div class="bottom-rotten-curve1" style="position: absolute; left: 0; bottom: 0px; width: 100%; height: 20px; background: url({{ asset('public/assets/images/background/rotten-curve-8.png') }}) center bottom no-repeat; background-size: 100% 100%; z-index: 1;"></div>
+            <div class="auto-container">
+
+                <div class="title-box clearfix">
+                    <div class="sec-title">
+                        <h2>हमारे सहयोगी</h2>
+                    </div>
+                </div>
+
+                <!--Team Carousel-->
+                <div class="team-carousel love-carousel owl-theme owl-carousel" data-options='{"loop": true, "margin": 30, "autoheight":true, "lazyload":true, "nav": true, "dots": true, "autoplay": true, "autoplayTimeout": 5000, "smartSpeed": 500, "responsive":{ "0" :{ "items": "1" },"600" :{ "items": "1" }, "800" :{ "items" : "2" }, "1024":{ "items" : "3" }, "1366":{ "items" : "3" }}}'>
+                    <div class="slide-item">
+                        <!--Team Block-->
+                        <div class="team-block">
+                            <div class="inner-box">
+                                <figure class="image-box"><a href="#"><img src="{{asset('public/assets/images/partners/Blueocean.jpg')}}" alt=""></a></figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <!--Team Block-->
+                        <div class="team-block">
+                            <div class="inner-box">
+                                <figure class="image-box"><a href="#"><img src="{{asset('public/assets/images/partners/bhel.jpg')}}" alt=""></a></figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <!--Team Block-->
+                        <div class="team-block">
+                            <div class="inner-box">
+                                <figure class="image-box"><a href="#"><img src="{{asset('public/assets/images/partners/bank-of-baroda.jpg')}}" alt=""></a></figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <!--Team Block-->
+                        <div class="team-block">
+                            <div class="inner-box">
+                                <figure class="image-box"><a href="#"><img src="{{asset('public/assets/images/partners/sbi.jpg')}}" alt=""></a></figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <!--Team Block-->
+                        <div class="team-block">
+                            <div class="inner-box">
+                                <figure class="image-box"><a href="#"><img src="{{asset('public/assets/images/partners/dena-bank.jpg')}}" alt=""></a></figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <!--Team Block-->
+                        <div class="team-block">
+                            <div class="inner-box">
+                                <figure class="image-box"><a href="#"><img src="{{asset('public/assets/images/partners/pata-nahi.jpg')}}" alt=""></a></figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <!--Team Block-->
+                        <div class="team-block">
+                            <div class="inner-box">
+                                <figure class="image-box"><a href="#"><img src="{{asset('public/assets/images/partners/ressurect-books.jpg')}}" alt=""></a></figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <!--Team Block-->
+                        <div class="team-block">
+                            <div class="inner-box">
+                                <figure class="image-box"><a href="#"><img src="{{asset('public/assets/images/partners/birla-gold.jpg')}}" alt=""></a></figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <!--Team Block-->
+                        <div class="team-block">
+                            <div class="inner-box">
+                                <figure class="image-box"><a href="#"><img src="{{asset('public/assets/images/partners/db.jpg')}}" alt=""></a></figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <!--Team Block-->
+                        <div class="team-block">
+                            <div class="inner-box">
+                                <figure class="image-box"><a href="#"><img src="{{asset('public/assets/images/partners/Jaypee.jpg')}}" alt=""></a></figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <!--Team Block-->
+                        <div class="team-block">
+                            <div class="inner-box">
+                                <figure class="image-box"><a href="#"><img src="{{asset('public/assets/images/partners/MP.jpg')}}" alt=""></a></figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <!--Team Block-->
+                        <div class="team-block">
+                            <div class="inner-box">
+                                <figure class="image-box"><a href="#"><img src="{{asset('public/assets/images/partners/hcl.jpg')}}" alt=""></a></figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <!--Team Block-->
+                        <div class="team-block">
+                            <div class="inner-box">
+                                <figure class="image-box"><a href="#"><img src="{{asset('public/assets/images/partners/idfc.jpg')}}" alt=""></a></figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <!--Team Block-->
+                        <div class="team-block">
+                            <div class="inner-box">
+                                <figure class="image-box"><a href="#"><img src="{{asset('public/assets/images/partners/IIFM.jpg')}}" alt=""></a></figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <!--Team Block-->
+                        <div class="team-block">
+                            <div class="inner-box">
+                                <figure class="image-box"><a href="#"><img src="{{asset('public/assets/images/partners/jehanuma.jpg')}}" alt=""></a></figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <!--Team Block-->
+                        <div class="team-block">
+                            <div class="inner-box">
+                                <figure class="image-box"><a href="#"><img src="{{asset('public/assets/images/partners/primal.jpg')}}" alt=""></a></figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <!--Team Block-->
+                        <div class="team-block">
+                            <div class="inner-box">
+                                <figure class="image-box"><a href="#"><img src="{{asset('public/assets/images/partners/pugdandi.jpg')}}" alt=""></a></figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <!--Team Block-->
+                        <div class="team-block">
+                            <div class="inner-box">
+                                <figure class="image-box"><a href="#"><img src="{{asset('public/assets/images/partners/saving-tiger.jpg')}}" alt=""></a></figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <!--Team Block-->
+                        <div class="team-block">
+                            <div class="inner-box">
+                                <figure class="image-box"><a href="#"><img src="{{asset('public/assets/images/partners/taj-safari.jpg')}}" alt=""></a></figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <!--Team Block-->
+                        <div class="team-block">
+                            <div class="inner-box">
+                                <figure class="image-box"><a href="#"><img src="{{asset('public/assets/images/partners/the-guardbook.jpg')}}" alt=""></a></figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <!--Team Block-->
+                        <div class="team-block">
+                            <div class="inner-box">
+                                <figure class="image-box"><a href="#"><img src="{{asset('public/assets/images/partners/the-last-wilderness.jpg')}}" alt=""></a></figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <!--Team Block-->
+                        <div class="team-block">
+                            <div class="inner-box">
+                                <figure class="image-box"><a href="#"><img src="{{asset('public/assets/images/partners/the-royal-bank-of-sctlnd.jpg')}}" alt=""></a></figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <!--Team Block-->
+                        <div class="team-block">
+                            <div class="inner-box">
+                                <figure class="image-box"><a href="#"><img src="{{asset('public/assets/images/partners/tiger-films.jpg')}}" alt=""></a></figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <!--Team Block-->
+                        <div class="team-block">
+                            <div class="inner-box">
+                                <figure class="image-box"><a href="#"><img src="{{asset('public/assets/images/partners/Traffic.jpg')}}" alt=""></a></figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <!--Team Block-->
+                        <div class="team-block">
+                            <div class="inner-box">
+                                <figure class="image-box"><a href="#"><img src="{{asset('public/assets/images/partners/wildlife-consrv.jpg')}}" alt=""></a></figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <!--Team Block-->
+                        <div class="team-block">
+                            <div class="inner-box">
+                                <figure class="image-box"><a href="#"><img src="{{asset('public/assets/images/partners/wildlife-trust-india.jpg')}}" alt=""></a></figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <!--Team Block-->
+                        <div class="team-block">
+                            <div class="inner-box">
+                                <figure class="image-box"><a href="#"><img src="{{asset('public/assets/images/partners/wwf.jpg')}}" alt=""></a></figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <!--Team Block-->
+                        <div class="team-block">
+                            <div class="inner-box">
+                                <figure class="image-box"><a href="#"><img src="{{asset('public/assets/images/partners/adit-jain.jpg')}}" alt=""></a></figure>
+                            </div>
+                        </div>
+                    </div>
+
+                </div><!--End Team Carousel-->
 
             </div>
         </section>

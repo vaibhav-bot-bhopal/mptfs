@@ -48,7 +48,10 @@
                                         <label for="inputNews">News Title</label>
                                         <input type="text" class="form-control {{($errors->any() && $errors->first('title')) ? 'is-invalid' : ''}}" id="title" name="title" value="{{old('title')}}" placeholder="Enter News Title Here">
                                         @if ($errors->any())
-                                            <p class="text-danger">{{$errors->first('title')}}</p>
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{$errors->first('title')}}</strong>
+                                            </span>
+                                            {{-- <p class="text-danger">{{$errors->first('title')}}</p> --}}
                                         @endif
                                     </div>
 
@@ -56,23 +59,32 @@
                                         <label for="inputPbody">News Description</label>
                                     <textarea class="ckeditor form-control {{($errors->any() && $errors->first('pbody')) ? 'is-invalid' : ''}}" id="pbody" name="pbody">{{old('pbody')}}</textarea>
                                         @if ($errors->any())
-                                            <p class="text-danger">{{$errors->first('pbody')}}</p>
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{$errors->first('pbody')}}</strong>
+                                            </span>
+                                            {{-- <p class="text-danger">{{$errors->first('pbody')}}</p> --}}
                                         @endif
                                     </div>
 
                                     <div class="form-group">
                                         <label for="inputImage">Featured Image</label>
-                                        <input type="file" class="form-control-file" id="image" name="image">
+                                        <input type="file" class="form-control-file {{($errors->any() && $errors->first('image')) ? 'is-invalid' : ''}}" id="image" name="image">
                                         @if ($errors->any())
-                                            <p class="text-danger pl-2">{{$errors->first('image')}}</p>
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{$errors->first('image')}}</strong>
+                                            </span>
+                                            {{-- <p class="text-danger pl-2">{{$errors->first('image')}}</p> --}}
                                         @endif
                                     </div>
 
                                     <div class="form-group">
                                         <label for="inputmImage">News Images</label>
-                                        <input type="file" class="form-control-file" id="m_image" name="m_image[]" multiple>
+                                        <input type="file" class="form-control-file {{($errors->any() && $errors->first('m_image.*')) ? 'is-invalid' : ''}}" id="m_image" name="m_image[]" multiple>
                                         @if ($errors->any())
-                                            <p class="text-danger pl-2">{{$errors->first('m_image')}}</p>
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{$errors->first('m_image.*')}}</strong>
+                                            </span>
+                                            {{-- <p class="text-danger pl-2">{{$errors->first('m_image')}}</p> --}}
                                         @endif
                                     </div>
 
@@ -134,7 +146,10 @@
                                         <label for="inputNews">न्यूज़ शीर्षक</label>
                                         <input type="text" class="form-control {{($errors->any() && $errors->first('title')) ? 'is-invalid' : ''}}" id="title" name="title" value="{{old('title')}}" placeholder="यहां समाचार शीर्षक दर्ज करें">
                                         @if ($errors->any())
-                                            <p class="text-danger">{{$errors->first('title')}}</p>
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{$errors->first('title')}}</strong>
+                                            </span>
+                                            {{-- <p class="text-danger">{{$errors->first('title')}}</p> --}}
                                         @endif
                                     </div>
 
@@ -142,23 +157,32 @@
                                         <label for="inputPbody">न्यूज़ विवरण</label>
                                     <textarea class="ckeditor form-control {{($errors->any() && $errors->first('pbody')) ? 'is-invalid' : ''}}" id="pbody" name="pbody">{{old('pbody')}}</textarea>
                                         @if ($errors->any())
-                                            <p class="text-danger">{{$errors->first('pbody')}}</p>
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{$errors->first('pbody')}}</strong>
+                                            </span>
+                                            {{-- <p class="text-danger">{{$errors->first('pbody')}}</p> --}}
                                         @endif
                                     </div>
 
                                     <div class="form-group">
                                         <label for="inputImage">फीचर्ड इमेज</label>
-                                        <input type="file" class="form-control-file" id="image" name="image">
+                                        <input type="file" class="form-control-file {{($errors->any() && $errors->first('image')) ? 'is-invalid' : ''}}" id="image" name="image">
                                         @if ($errors->any())
-                                            <p class="text-danger pl-2">{{$errors->first('image')}}</p>
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{$errors->first('image')}}</strong>
+                                            </span>
+                                            {{-- <p class="text-danger pl-2">{{$errors->first('image')}}</p> --}}
                                         @endif
                                     </div>
 
                                     <div class="form-group">
                                         <label for="inputmImage">न्यूज़ इमेजेस</label>
-                                        <input type="file" class="form-control-file" id="m_image" name="m_image[]" multiple>
+                                        <input type="file" class="form-control-file {{($errors->any() && $errors->first('m_image.*')) ? 'is-invalid' : ''}}" id="m_image" name="m_image[]" multiple>
                                         @if ($errors->any())
-                                            <p class="text-danger pl-2">{{$errors->first('m_image')}}</p>
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{$errors->first('m_image.*')}}</strong>
+                                            </span>
+                                            {{-- <p class="text-danger pl-2">{{$errors->first('m_image.*')}}</p> --}}
                                         @endif
                                     </div>
 

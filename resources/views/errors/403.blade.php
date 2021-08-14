@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BTR | Access Forbidden</title>
+    <title>MPTFS | Access Forbidden</title>
     <link rel="stylesheet" href="{{asset('public/assets/css/bootstrap.css')}}">
 </head>
 <body>

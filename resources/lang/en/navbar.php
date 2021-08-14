@@ -24,11 +24,12 @@ return [
     'menu_partners' => 'Partners',
     'menu_news_corner' => 'Info Corner',
     'menu_our_blog' => 'Our Blog',
-    'menu_latest_news' => 'Latest News',
+    'menu_latest_news' => 'MPTFS Media',
     'menu_latest_events' => 'Latest Events',
     'menu_downloads' => 'Downloads',
     'menu_gallery' => 'Gallery',
     'menu_photos' => 'Photos',
     'menu_video' => 'Video',
     'menu_contact_us' => 'Contact',
+    'menu_quiz_result' => 'Quiz Result',
 ];

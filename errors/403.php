@@ -1,5 +1,5 @@
 <?php
-define('BASE_URL', 'http://localhost/mptigerfoundation.org/');
+define('BASE_URL', 'http://localhost/mptfs.org/');
 ?>
 
 <!DOCTYPE html>

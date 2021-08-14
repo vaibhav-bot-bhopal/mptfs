@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BTR | Service Unavailable</title>
+    <title>MPTFS | Service Unavailable</title>
     <!-- Favicon -->
     <link rel="shortcut icon" href="{{asset('public/assets/images/mptfs-favicon.png')}}" type="image/x-icon">
     <link rel="icon" href="{{asset('public/assets/images/mptfs-favicon.png')}}" type="image/x-icon">
@@ -32,7 +32,8 @@
 
         <div class="row">
 			<div class="col-lg-12 text-center">
-                <a href="{{url('/')}}" class="btn btn-outline-aqua">Reload  <i class="fa fa-sync" aria-hidden="true"></i></a>
+                <button class="btn btn-outline-aqua" onclick="window.location.reload()">Reload  <i class="fa fa-sync" aria-hidden="true"></i></button>
+                {{-- <a href="{{url('/')}}" class="btn btn-outline-aqua">Reload  <i class="fa fa-sync" aria-hidden="true"></i></a> --}}
 			</div>
 		</div>
     </div>
