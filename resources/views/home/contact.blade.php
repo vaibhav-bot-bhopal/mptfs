@@ -18,13 +18,13 @@
 
     <!-- Page Banner Section -->
     <section class="page-banner">
-        <div class="image-layer lazy-image" data-bg="url('../public/assets/images/mptfs-imgs/Contact - Banner.jpg')"></div>
+        <div class="image-layer lazy-image" data-bg="url('../public/assets/images/mptfs-imgs/Contact-Banner.webp')"></div>
         <div class="bottom-rotten-curve"></div>
 
         <div class="auto-container">
             <h1>{{__('home.contact_heading')}}</h1>
             <ul class="bread-crumb clearfix">
-                <li><a href="#">{{__('home.home')}}</a></li>
+                <li><a href="{{ route('mptfs.home') }}">{{__('home.home')}}</a></li>
                 <li class="active">{{__('home.contact_heading')}}</li>
             </ul>
         </div>
@@ -45,7 +45,7 @@
                     <!--Info Box-->
                     <div class="info-box col-lg-6 col-md-6 col-sm-12">
                         <div class="inner-box wow fadeInUp" data-wow-delay="600ms">
-                            <div class="image-layer lazy-image" data-bg="url('images/resource/contact-image-3.jpg')"></div>
+                            <div class="image-layer lazy-image"></div>
                             <div class="icon-box"><span class="flaticon-email"></span></div>
                             <h4>{{__('home.email_heading')}}</h4>
                             <ul>
@@ -57,11 +57,11 @@
                     <!--Info Box-->
                     <div class="info-box col-lg-6 col-md-6 col-sm-12">
                         <div class="inner-box wow fadeInUp" data-wow-delay="300ms">
-                            <div class="image-layer lazy-image" data-bg="url('images/resource/contact-image-2.jpg')"></div>
+                            <div class="image-layer lazy-image"></div>
                             <div class="icon-box"><span class="flaticon-phone-call"></span></div>
                             <h4>{{__('home.phone_heading')}}</h4>
                             <ul>
-                                <li><a href="tel:0755 2674318">{{__('home.phone')}}}</a></li>
+                                <li><a href="tel:0755 2674318">{{__('home.phone')}}</a></li>
                             </ul>
                         </div>
                     </div>
@@ -69,7 +69,7 @@
                         <!--Info Box-->
                         <div class="info-box col-lg-6 col-md-6 col-sm-12">
                         <div class="inner-box wow fadeInUp" data-wow-delay="0ms">
-							<div class="image-layer lazy-image" data-bg="url('images/resource/contact-image-1.jpg')"></div>
+							<div class="image-layer lazy-image"></div>
                             <div class="icon-box"><span class="flaticon-home-location-marker"></span></div>
                             <h4>{{__('home.address_heading')}}</h4>
                             <ul>
@@ -81,7 +81,7 @@
                     <!--Info Box-->
                     <div class="info-box col-lg-6 col-md-6 col-sm-12">
                         <div class="inner-box wow fadeInUp" data-wow-delay="600ms">
-                            <div class="image-layer lazy-image" data-bg="url('images/resource/contact-image-3.jpg')"></div>
+                            <div class="image-layer lazy-image"></div>
                             <div class="icon-box"><span class="flaticon-email"></span></div>
                             <h4>{{__('home.coordinators_heading')}}</h4>
                             <ul>
@@ -98,7 +98,7 @@
 
     <!--Contact Section-->
     <section class="contact-section">
-        <div class="bottom-rotten-curve1" style="position: absolute; left: 0; bottom: 0px; width: 100%; height: 20px; background: url({{ asset('public/loveus/images/background/rotten-curve-8.png') }}) center bottom no-repeat; background-size: 100% 100%; z-index: 1;"></div>
+        <div class="bottom-rotten-curve1" style="position: absolute; left: 0; bottom: 0px; width: 100%; height: 20px;"></div>
 
         <div class="outer-container clearfix">
             <div class="form-column clearfix">

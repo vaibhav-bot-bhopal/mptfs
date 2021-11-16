@@ -10,13 +10,13 @@
 
     <!-- Page Banner Section -->
     <section class="page-banner">
-        <div class="image-layer lazy-image" data-bg="url('../../public/assets/images/mptfs-imgs/Blog - Banner.jpg')"></div>
+        <div class="image-layer lazy-image" data-bg="url('../../public/assets/images/mptfs-imgs/Blog-Banner.webp')"></div>
         <div class="bottom-rotten-curve"></div>
 
         <div class="auto-container">
             <h1>{{__('news.category_heading')}}</h1>
             <ul class="bread-crumb clearfix">
-                <li><a href="index.html">{{__('news.home')}}</a></li>
+                <li><a href="{{ route('mptfs.home') }}">{{__('news.home')}}</a></li>
                 <li class="active">{{__('news.category_heading')}}</li>
             </ul>
         </div>
@@ -48,35 +48,35 @@
                                         <div class="lower-content">
                                             <div class="date">{{ $post->created_at->format('d') }} <span class="month">{{ $post->created_at->format('M') }}</span></div>
                                             <h3><a href="{{ route('post.details', $post->slug) }}">{{ Str::limit($post->title, '25') }}</a></h3>
-                                            <div class="text">{!! Str::limit($post->body, '80') !!}</div>
+                                            <div class="text">{!! Str::limit($post->body, '40') !!}</div>
                                             <div class="post-meta">
                                                 <ul class="clearfix">
-                                                    <li><a href="#"><span class="icon fa fa-user"></span>{{ $post->user->name }}</a></li>
-
-                                                    {{-- @guest
-                                                        <a href="javascript:void(0);" onclick="toastr.info('To add favorite list. You need to login first.','Info',{
-                                                            closeButton: true,
-                                                            progressBar: true,
-
-                                                        })"><span class="icon fa fa-heart"></span>{{ $post->favorite_to_users->count() }}</a>
-                                                    @else
-                                                    <li>
-                                                        <a href="javascript:void(0);" onclick="document.getElementById('favorite-form-{{ $post->id }}').submit();"
-                                                            class="{{ !Auth::user()->favorite_posts->where('pivot.post_id',$post->id)->count()  == 0 ? 'favorite_posts' : ''}}"><span class="icon fa fa-heart"></span>{{ $post->favorite_to_users->count() }}</a>
-
-                                                        <form id="favorite-form-{{ $post->id }}" method="POST" action="{{ route('post.favorite',$post->id) }}" style="display: none;">
-                                                            @csrf
-                                                        </form>
-                                                    </li>
-                                                    @endguest --}}
-
-                                                    <li><a href="#"><span class="icon fa fa-comments"></span> {{ $post->comments->count() }} </a></li>
-                                                    <li><a href="#"><span class="icon fa fa-eye"></span> {{ $post->view_count }} </a></li>
-                                                    <li><a href="#"><span class="icon fa fa-share-alt"></span></a></li>
+                                                    <li><span class="icon fa fa-user"></span>{{ $post->user->name }}</li>
+                                                    <li><span class="icon fa fa-comments"></span> {{ $post->comments->count() }}</li>
+                                                    <li><span class="icon fa fa-eye"></span> {{ $post->view_count }}</li>
+                                                    {{-- <li><span class="icon fa fa-share-alt"></span></li> --}}
                                                 </ul>
                                             </div>
                                         </div>
                                     </div>
+
+                                    {{-- <div class="inner-box">
+                                        <div class="image-box">
+                                            <figure class="image"><a href="{{ route('post.details', $post->slug) }}"><img class="lazy-image" src="{{asset('public/storage/post/'.$post->image)}}" alt="{{ $post->title }}"></a></figure>
+                                        </div>
+                                        <div class="lower-content">
+                                            <div class="date">{{ $post->created_at->format('d') }} <span class="month">{{ $post->created_at->format('M') }}</span></div>
+                                            <h3><a href="{{ route('post.details', $post->slug) }}">{{ Str::limit($post->title, '25') }}</a></h3>
+                                            <div class="text">{!! Str::limit($post->body, '80') !!}</div>
+                                            <div class="post-meta">
+                                                <ul class="clearfix">
+                                                    <li><a href="#"><span class="icon fa fa-user"></span>{{ $post->user->name }}</a></li>
+                                                    <li><a href="#"><span class="icon fa fa-comments"></span> {{ $post->comments->count() }} </a></li>
+                                                    <li><a href="#"><span class="icon fa fa-eye"></span> {{ $post->view_count }} </a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div> --}}
                                 </div>
                             @empty
                                 <div class="col-lg-12 col-md-12 pb-4">

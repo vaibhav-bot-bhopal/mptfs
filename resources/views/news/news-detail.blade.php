@@ -25,7 +25,7 @@
             <div class="auto-container">
                 <h1>{{__('news.news_detail_heading')}}</h1>
                 <ul class="bread-crumb clearfix">
-                    <li><a href="index.html">{{__('news.home')}}</a></li>
+                    <li><a href="{{ route('mptfs.home') }}">{{__('news.home')}}</a></li>
                     <li class="active">{{__('news.news_detail_heading')}}</li>
                 </ul>
             </div>
@@ -76,7 +76,7 @@
             <div class="auto-container">
                 <h1>{{__('news.news_detail_heading')}}</h1>
                 <ul class="bread-crumb clearfix">
-                    <li><a href="#">{{__('news.home')}}</a></li>
+                    <li><a href="{{ route('mptfs.home') }}">{{__('news.home')}}</a></li>
                     <li class="active">{{__('news.news_detail_heading')}}</li>
                 </ul>
             </div>

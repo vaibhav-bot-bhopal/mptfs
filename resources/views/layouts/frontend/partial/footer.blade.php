@@ -12,13 +12,12 @@
     }
 </style>
 
-
 <!-- Call To Action Section -->
 <section class="call-to-action-two">
     <div class="auto-container">
         <div class="inner clearfix">
             <div class="title-box wow fadeInLeft" data-wow-delay="0ms"><h2 style="color: #1e2436;">{{__('footer.become_volunteer_heading')}}</h2></div>
-            <div class="link-box wow fadeInRight" data-wow-delay="0ms"><a href="#" class="theme-btn btn-style-five"><span class="btn-title">{{__('footer.btn_get_involved_cap')}}</span></a></div>
+            <div class="link-box wow fadeInRight" data-wow-delay="0ms"><a href="https://forms.gle/zK8iaNKh91P3uqQZ8" target="_blank" class="theme-btn btn-style-five"><span class="btn-title">{{__('footer.btn_get_involved_cap')}}</span></a></div>
         </div>
     </div>
 </section>
@@ -41,13 +40,14 @@
                     <div class="footer-widget logo-widget">
                         <div class="widget-content">
                             <div class="footer-logo">
-                                <a href="#"><img class="lazy-image" src="images/resource/image-spacer-for-validation.png" data-src="{{asset('public/assets/images/side-logo.png')}}" alt="" width="48" height="48"/></a>
+                                <a href="#"><img class="lazy-image" src="{{asset('public/assets/images/side-logo.png')}}" data-src="{{asset('public/assets/images/side-logo.png')}}" alt="" width="48" height="48"/></a>
                             </div>
                             <div class="text text-justify">{{__('footer.about_para')}}</div>
                             <ul class="social-links clearfix">
                                 <li><a href="https://www.facebook.com/mptigerfoundationsociety" target="_blank"><span class="fab fa-facebook-f"></span></a></li>
                                 <li><a href="https://www.twitter.com/mptfs" target="_blank"><span class="fab fa-twitter"></span></a></li>
                                 <li><a href="https://www.youtube.com/channel/UCt7TIvdCEW4iUsxUqmSqswA" target="_blank"><span class="fab fa-youtube"></span></a></li>
+                                <li><a href="https://www.instagram.com/mptfs.official/" target="_blank"><span class="fab fa-instagram"></span></a></li>
                             </ul>
                         </div>
                     </div>
@@ -64,6 +64,7 @@
                                 <li><a href="{{route('news.blog')}}">{{__('footer.blog')}}</a></li>
                                 <li><a href="{{route('home.gallery')}}">{{__('footer.gallery')}}</a></li>
                                 <li><a href="{{route('home.contact')}}">{{__('footer.contact')}}</a></li>
+                                <li><a href="{{route('news.downloads')}}">{{__('footer.download')}}</a></li>
                             </ul>
                         </div>
                     </div>
@@ -88,13 +89,13 @@
                     <div class="column col-lg-3 col-md-6 col-sm-12">
                         <div class="footer-widget news-widget">
                             <div class="widget-content">
-                                <h3>{{ __('footer.latest_news') }}</h3>
-                                @foreach ($newsesen as $news)
+                                <h3>{{ __('footer.blog') }}</h3>
+                                @foreach ($postsen as $post)
                                     <!--News Post-->
                                     <div class="news-post">
-                                        <div class="post-thumb"><a href="{{ route('news.news') }}"><img class="lazy-image" src="{{asset('public/assets/images/resource/post-thumb-2.jpg')}}" data-src="{{asset('public/storage/news-english/'.$news->image)}}" alt=""></a></div>
-                                        <h5><a href="{{ route('news.news') }}">{{ Str::limit($news->title, '25') }}</a></h5>
-                                        <div class="date">{{ date('F d, Y', strtotime($news->created_at)) }}</div>
+                                        <div class="post-thumb"><a href="{{ route('news.blog') }}"><img class="lazy-image" src="{{asset('public/assets/images/resource/post-thumb-2.jpg')}}" data-src="{{asset('public/storage/post/'.$post->image)}}" alt=""></a></div>
+                                        <h5><a href="{{ route('news.blog') }}">{{ Str::limit($post->title, '25') }}</a></h5>
+                                        <div class="date">{{ date('F d, Y', strtotime($post->created_at)) }}</div>
                                     </div>
                                 @endforeach
                             </div>
@@ -106,13 +107,13 @@
                     <div class="column col-lg-3 col-md-6 col-sm-12">
                         <div class="footer-widget news-widget">
                             <div class="widget-content">
-                                <h3>{{ __('footer.latest_news') }}</h3>
-                                @foreach ($newseshi as $news)
+                                <h3>{{ __('footer.blog') }}</h3>
+                                @foreach ($postshi as $post)
                                     <!--News Post-->
                                     <div class="news-post">
-                                        <div class="post-thumb"><a href="{{ route('news.news') }}"><img class="lazy-image" src="{{asset('public/assets/images/resource/post-thumb-2.jpg')}}" data-src="{{asset('public/storage/news-hindi/'.$news->image)}}" alt=""></a></div>
-                                        <h5><a href="{{ route('news.news') }}">{{ Str::limit($news->title, '25') }}</a></h5>
-                                        <div class="date">{{ date('F d, Y', strtotime($news->created_at)) }}</div>
+                                        <div class="post-thumb"><a href="{{ route('news.blog') }}"><img class="lazy-image" src="{{asset('public/assets/images/resource/post-thumb-2.jpg')}}" data-src="{{asset('public/storage/post-hindi/'.$post->image)}}" alt=""></a></div>
+                                        <h5><a href="{{ route('news.blog') }}">{{ Str::limit($post->title, '25') }}</a></h5>
+                                        <div class="date">{{ date('F d, Y', strtotime($post->created_at)) }}</div>
                                     </div>
                                 @endforeach
                             </div>

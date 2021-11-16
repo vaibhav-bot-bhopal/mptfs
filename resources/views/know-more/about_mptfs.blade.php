@@ -10,13 +10,13 @@
 
     <!-- Page Banner Section -->
     <section class="page-banner">
-        <div class="image-layer lazy-image" data-bg="url('../public/assets/images/mptfs-imgs/Banner-2.jpg')"></div>
+        <div class="image-layer lazy-image" data-bg="url('../public/assets/images/mptfs-imgs/Banner-2.webp')"></div>
         <div class="bottom-rotten-curve alternate"></div>
 
         <div class="auto-container">
             <h1>{{__('know.about_us_heading')}}</h1>
             <ul class="bread-crumb clearfix">
-                <li><a href="#">{{__('know.home')}}</a></li>
+                <li><a href="{{ route('mptfs.home') }}">{{__('know.home')}}</a></li>
                 <li class="active">{{__('know.about_us_heading')}}</li>
             </ul>
         </div>
@@ -37,7 +37,6 @@
                             <h2 class="h2-color">{{__('know.about_us_heading')}}</h2>
                             <div class="text text-justify">{{__('know.about_p1')}}</div>
                             <div class="text text-justify">{{__('know.about_p2')}}</div>
-                            <!-- <div class="link-box clearfix"><a href="#" class="theme-btn btn-style-one"><span class="btn-title">Read More</span></a></div> -->
                         </div>
                     </div>
                 </div>
@@ -45,7 +44,7 @@
                 <div class="right-column col-lg-6 col-md-12 col-sm-12">
                     <div class="inner">
                         <div class="images clearfix">
-                            <figure class="wow fadeInRight" data-wow-delay="300ms"><img class="lazy-image" src="{{ asset('public/assets/images/mptfs-imgs/About-Us-Side-pic.jpg') }}" data-src="{{ asset('public/assets/images/mptfs-imgs/About-Us-Side-pic.jpg') }}" alt=""></figure>
+                            <figure class="wow fadeInRight" data-wow-delay="300ms"><img class="lazy-image" src="{{ asset('public/assets/images/mptfs-imgs/About-Us-Side-pic.webp') }}" data-src="{{ asset('public/assets/images/mptfs-imgs/About-Us-Side-pic.webp') }}" alt=""></figure>
                         </div>
                     </div>
                 </div>
@@ -68,18 +67,16 @@
                         <!--Service Block-->
                         <div class="service-block col-xl-6 col-lg-6 col-md-6 col-sm-12">
                             <div class="inner-box">
-                                <!-- <div class="icon-box"><span class="flaticon-water-bottle"></span></div> -->
                                 <h3 class="h3-color">{{__('know.vision_heading')}}</h3>
-                                <div class="text-color">{{__('know.vision_para')}}</div>
+                                <div class="text-color text-justify">{{__('know.vision_para')}}</div>
                             </div>
                         </div>
 
                         <!--Service Block-->
                         <div class="service-block col-xl-6 col-lg-6 col-md-6 col-sm-12">
                             <div class="inner-box">
-                                <!-- <div class="icon-box"><span class="flaticon-fruit"></span></div> -->
                                 <h3 class="h3-color">{{__('know.mission_heading')}}</h3>
-                                <div class="text-color">{{__('know.mission_para')}}</div>
+                                <div class="text-color text-justify">{{__('know.mission_para')}}</div>
                             </div>
                         </div>
 
@@ -107,7 +104,6 @@
                         <div class="sec-title">
                             <div class="text-color text-justify">{{__('know.history_div1')}}</div>
                             <div class="text-color text-justify">{{__('know.history_div2')}}</div>
-                            <div class="text-color text-justify">{{__('know.history_div3')}}</div>
                         </div>
                     </div>
                 </div>

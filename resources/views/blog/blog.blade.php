@@ -20,13 +20,13 @@
     @if (session('locale') == 'en')
         <!-- Page Banner Section -->
         <section class="page-banner">
-            <div class="image-layer lazy-image" data-bg="url('../public/assets/images/mptfs-imgs/Blog - Banner.jpg')"></div>
+            <div class="image-layer lazy-image" data-bg="url('../public/assets/images/mptfs-imgs/Blog-Banner.webp')"></div>
             <div class="bottom-rotten-curve"></div>
 
             <div class="auto-container">
                 <h1>{{__('news.blog_heading')}}</h1>
                 <ul class="bread-crumb clearfix">
-                    <li><a href="index.html">{{__('news.home')}}</a></li>
+                    <li><a href="{{ route('mptfs.home') }}">{{__('news.home')}}</a></li>
                     <li class="active">{{__('news.blog_heading')}}</li>
                 </ul>
             </div>
@@ -106,53 +106,55 @@
                         </div>
                     </div>
 
-                    <!--Sidebar Side-->
-                    <div class="sidebar-side col-lg-4 col-md-12 col-sm-12">
-                        <aside class="sidebar">
 
-                            <!-- Search -->
-                            <div class="sidebar-widget search-box">
-                                <h3 class="sidebar-title">{{__('news.side_search')}}</h3>
-                                <form method="post" action="contact.html">
-                                    <div class="form-group">
-                                        <input type="search" name="search-field" value="" placeholder="Search..." required>
-                                        <button type="submit"><span class="icon flaticon-search-1"></span></button>
-                                    </div>
-                                </form>
-                            </div>
+                </div>
 
-                            <!-- Category Widget -->
-                            <div class="sidebar-widget categories">
-                                <h3 class="sidebar-title">{{__('news.side_category')}}</h3>
-                                @foreach ($categories as $category)
-                                    <div class="widget-content">
-                                        <ul>
-                                            <li><a href="{{ route('category.posts',$category->slug) }}">{{ $category->name }}</a></li>
-                                        </ul>
+                <!--Sidebar Side-->
+                <div class="sidebar-side col-lg-4 col-md-12 col-sm-12">
+                    <aside class="sidebar">
+
+                        <!-- Search -->
+                        {{-- <div class="sidebar-widget search-box">
+                            <h3 class="sidebar-title">{{__('news.side_search')}}</h3>
+                            <form method="post" action="#">
+                                <div class="form-group">
+                                    <input type="search" name="search-field" value="" placeholder="Search..." required>
+                                    <button type="submit"><span class="icon flaticon-search-1"></span></button>
+                                </div>
+                            </form>
+                        </div> --}}
+
+                        <!-- Category Widget -->
+                        <div class="sidebar-widget categories">
+                            <h3 class="sidebar-title">{{__('news.side_category')}}</h3>
+                            @foreach ($categories as $category)
+                                <div class="widget-content">
+                                    <ul>
+                                        <li><a href="{{ route('category.posts',$category->slug) }}">{{ $category->name }}</a></li>
+                                    </ul>
+                                </div>
+                            @endforeach
+                        </div>
+
+                        <!-- Post Widget -->
+                        {{-- <div class="sidebar-widget popular-posts">
+                            <h3 class="sidebar-title">{{__('news.side_latest')}}</h3>
+                            <div class="widget-content">
+
+                                @foreach ($randomposts as $randompost)
+                                    <!--News Post-->
+                                    <div class="news-post">
+                                        <div class="post-thumb"><a href="#"><img class="lazy-image" src="images/resource/image-spacer-for-validation.png" data-src="{{ asset('public/storage/latest-news/'. $randompost->image) }}" alt=""></a></div>
+                                        <div class="date"><span class="fa fa-calendar-alt"></span>{{ $randompost->created_at->diffForHumans() }}</div>
+                                        <h4><a href="{{ route('post.details', $randompost->slug) }}">{{ Str::limit($randompost->title, '25') }}</a></h4>
                                     </div>
                                 @endforeach
                             </div>
+                        </div> --}}
 
-                            <!-- Post Widget -->
-                            <div class="sidebar-widget popular-posts">
-                                <h3 class="sidebar-title">{{__('news.side_latest')}}</h3>
-                                <div class="widget-content">
-
-                                    @foreach ($randomposts as $randompost)
-                                        <!--News Post-->
-                                        <div class="news-post">
-                                            <div class="post-thumb"><a href="#"><img class="lazy-image" src="images/resource/image-spacer-for-validation.png" data-src="{{ asset('public/storage/latest-news/'. $randompost->image) }}" alt=""></a></div>
-                                            <div class="date"><span class="fa fa-calendar-alt"></span>{{ $randompost->created_at->diffForHumans() }}</div>
-                                            <h4><a href="{{ route('post.details', $randompost->slug) }}">{{ Str::limit($randompost->title, '25') }}</a></h4>
-                                        </div>
-                                    @endforeach
-                                </div>
-                            </div>
-
-                        </aside>
-                    </div>
-
+                    </aside>
                 </div>
+
             </div>
         </div>
         <!-- End Sidebar Page Container -->
@@ -162,13 +164,13 @@
     @if (session('locale') == 'hi')
         <!-- Page Banner Section -->
         <section class="page-banner">
-            <div class="image-layer lazy-image" data-bg="url('../public/assets/images/mptfs-imgs/Blog - Banner.jpg')"></div>
+            <div class="image-layer lazy-image" data-bg="url('../public/assets/images/mptfs-imgs/Blog-Banner.webp')"></div>
             <div class="bottom-rotten-curve"></div>
 
             <div class="auto-container">
                 <h1>{{__('news.blog_heading')}}</h1>
                 <ul class="bread-crumb clearfix">
-                    <li><a href="#">{{__('news.home')}}</a></li>
+                    <li><a href="{{ route('mptfs.home') }}">{{__('news.home')}}</a></li>
                     <li class="active">{{__('news.blog_heading')}}</li>
                 </ul>
             </div>
@@ -247,54 +249,55 @@
                             @endif
                         </div>
                     </div>
+                </div>
 
-                    <!--Sidebar Side-->
-                    <div class="sidebar-side col-lg-4 col-md-12 col-sm-12">
-                        <aside class="sidebar">
+                <!--Sidebar Side-->
+                <div class="sidebar-side col-lg-4 col-md-12 col-sm-12">
+                    <aside class="sidebar">
 
-                            <!-- Search -->
-                            <div class="sidebar-widget search-box">
-                                <h3 class="sidebar-title">{{__('news.side_search')}}</h3>
-                                <form method="post" action="#">
-                                    <div class="form-group">
-                                        <input type="search" name="search-field" value="" placeholder="सर्च....." required>
-                                        <button type="submit"><span class="icon flaticon-search-1"></span></button>
-                                    </div>
-                                </form>
-                            </div>
+                        <!-- Search -->
+                        {{-- <div class="sidebar-widget search-box">
+                            <h3 class="sidebar-title">{{__('news.side_search')}}</h3>
+                            <form action="#">
+                                <div class="form-group">
+                                    <input type="search" name="search-field" value="" placeholder="सर्च....." required>
+                                    <button type="submit"><span class="icon flaticon-search-1"></span></button>
+                                </div>
+                            </form>
+                        </div> --}}
 
-                            <!-- Category Widget -->
-                            {{-- <div class="sidebar-widget categories">
-                                <h3 class="sidebar-title">Categories</h3>
-                                @foreach ($categories as $category)
-                                    <div class="widget-content">
-                                        <ul>
-                                            <li><a href="{{ route('category.posts',$category->slug) }}">{{ $category->name }}</a></li>
-                                        </ul>
+                        <!-- Category Widget -->
+                        <div class="sidebar-widget categories">
+                            <h3 class="sidebar-title">कैटेगरीज़</h3>
+                            @foreach ($categories as $category)
+                                <div class="widget-content">
+                                    <ul>
+                                        <li><a href="{{ route('category.posts',$category->slug) }}">{{ $category->name }}</a></li>
+                                    </ul>
+                                </div>
+                            @endforeach
+                        </div>
+
+                        <!-- Post Widget -->
+                        {{-- <div class="sidebar-widget popular-posts">
+                            <h3 class="sidebar-title">{{__('news.side_latest')}}</h3>
+                            <div class="widget-content">
+
+                                @foreach ($randomposts as $randompost)
+                                    <!--News Post-->
+                                    <div class="news-post">
+                                        <div class="post-thumb"><a href="#"><img class="lazy-image" src="images/resource/image-spacer-for-validation.png" data-src="{{ asset('public/storage/latest-news-hindi/'. $randompost->image) }}" alt=""></a></div>
+                                        <div class="date"><span class="fa fa-calendar-alt"></span>{{ $randompost->created_at->diffForHumans() }}</div>
+                                        <h4><a href="{{ route('post.details', $randompost->slug) }}">{{ Str::limit($randompost->title, '25') }}</a></h4>
                                     </div>
                                 @endforeach
-                            </div> --}}
-
-                            <!-- Post Widget -->
-                            <div class="sidebar-widget popular-posts">
-                                <h3 class="sidebar-title">{{__('news.side_latest')}}</h3>
-                                <div class="widget-content">
-
-                                    @foreach ($randomposts as $randompost)
-                                        <!--News Post-->
-                                        <div class="news-post">
-                                            <div class="post-thumb"><a href="#"><img class="lazy-image" src="images/resource/image-spacer-for-validation.png" data-src="{{ asset('public/storage/latest-news-hindi/'. $randompost->image) }}" alt=""></a></div>
-                                            <div class="date"><span class="fa fa-calendar-alt"></span>{{ $randompost->created_at->diffForHumans() }}</div>
-                                            <h4><a href="{{ route('post.details', $randompost->slug) }}">{{ Str::limit($randompost->title, '25') }}</a></h4>
-                                        </div>
-                                    @endforeach
-                                </div>
                             </div>
+                        </div> --}}
 
-                        </aside>
-                    </div>
-
+                    </aside>
                 </div>
+
+
             </div>
         </div>
         <!-- End Sidebar Page Container -->

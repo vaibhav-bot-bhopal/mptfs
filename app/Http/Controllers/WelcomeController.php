@@ -7,6 +7,7 @@ use App\Models\Download;
 use App\Models\eventEnglish;
 use App\Models\eventHindi;
 use App\Models\Gallery;
+use App\Models\Milestone;
 use App\Models\newsEnglish;
 use App\Models\newsHindi;
 use App\Models\Post;
@@ -25,7 +26,8 @@ class WelcomeController extends Controller
             $posts = Post::approved()->published()->latest()->paginate(3);
             $events = eventEnglish::orderBy('id', 'desc')->take(3)->get();
             $newses = newsEnglish::orderBy('id', 'desc')->take(3)->get();
-            return view('home.index', compact('users', 'posts', 'events', 'newses'));
+            $milestones = Milestone::orderBy('id', 'desc')->get();
+            return view('home.index', compact('users', 'posts', 'events', 'newses', 'milestones'));
         }
 
         // Display Article, Event and News For Hindi Language
@@ -33,7 +35,8 @@ class WelcomeController extends Controller
             $posts = PostHindi::approved()->published()->latest()->paginate(3);
             $events = eventHindi::orderBy('id', 'desc')->take(3)->get();
             $newses = newsHindi::orderBy('id', 'desc')->take(3)->get();
-            return view('home.index', compact('posts', 'events', 'newses'));
+            $milestones = Milestone::orderBy('id', 'desc')->get();
+            return view('home.index', compact('posts', 'events', 'newses', 'milestones'));
         }
     }
 
@@ -54,5 +57,19 @@ class WelcomeController extends Controller
     {
         $photos = Download::orderBy('original_filename', 'DESC')->paginate(12);
         return view('news.downloads', compact('photos'));
+    }
+
+    public function milestoneDetail($slug)
+    {
+        // Milestone Detail
+        if (session('locale') == 'en') {
+            $milestones = Milestone::where('slug', $slug)->first();
+
+            if (!$milestones) {
+                return redirect()->route('home');
+            }
+
+            return view('home.milestone-detail', compact('milestones'));
+        }
     }
 }

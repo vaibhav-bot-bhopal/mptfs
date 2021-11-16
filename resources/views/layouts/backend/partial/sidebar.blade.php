@@ -184,7 +184,8 @@
                             </p>
                             </a>
                         </li>
-                        <li class="nav-header">NEWS</li>
+
+                        {{-- <li class="nav-header">NEWS</li>
                         <li class="nav-item">
                             <a href="{{route('user.news.index')}}" class="nav-link {{Request::is('user/news*') ? 'active' : ''}}">
                             <i class="nav-icon fas fa-newspaper"></i>
@@ -192,14 +193,25 @@
                                 Latest News
                             </p>
                             </a>
+                        </li> --}}
+
+                        <li class="nav-header">MILESTONES</li>
+                        <li class="nav-item">
+                            <a href="{{route('user.milestone.index')}}" class="nav-link {{Request::is('user/milestone*') ? 'active' : ''}}">
+                            <i class="nav-icon fas fa-newspaper"></i>
+                            <p>
+                                Milestone
+                            </p>
+                            </a>
                         </li>
+
                         <li class="nav-header">EVENTS</li>
                         <li class="nav-item">
                             <a href="{{route('user.event.index')}}" class="nav-link {{Request::is('user/event*') ? 'active' : ''}}">
-                            <i class="nav-icon fas fa-calendar-alt"></i>
-                            <p>
-                                Latest Events
-                            </p>
+                                <i class="nav-icon fas fa-calendar-alt"></i>
+                                <p>
+                                    Latest Events
+                                </p>
                             </a>
                         </li>
                         <li class="nav-header">AWARENESS INITIATIVES</li>
@@ -472,7 +484,7 @@
                             </p>
                             </a>
                         </li>
-                        <li class="nav-header">NEWS</li>
+                        {{-- <li class="nav-header">NEWS</li>
                         <li class="nav-item">
                             <a href="{{route('user.news.index')}}" class="nav-link {{Request::is('user/news*') ? 'active' : ''}}">
                             <i class="nav-icon fas fa-newspaper"></i>
@@ -480,8 +492,19 @@
                                 लेटेस्ट न्यूज़
                             </p>
                             </a>
+                        </li> --}}
+
+                        <li class="nav-header">माइलस्टोन</li>
+                        <li class="nav-item">
+                            <a href="{{route('user.milestone.index')}}" class="nav-link {{Request::is('user/milestone*') ? 'active' : ''}}">
+                            <i class="nav-icon fas fa-newspaper"></i>
+                            <p>
+                                माइलस्टोन
+                            </p>
+                            </a>
                         </li>
-                        <li class="nav-header">EVENTS</li>
+
+                        <li class="nav-header">इवेंट्स</li>
                         <li class="nav-item">
                             <a href="{{route('user.event.index')}}" class="nav-link {{Request::is('user/event*') ? 'active' : ''}}">
                             <i class="nav-icon fas fa-calendar-alt"></i>

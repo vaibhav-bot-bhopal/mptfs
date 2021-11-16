@@ -45,13 +45,15 @@ class DownloadsController extends Controller
 
         for ($i = 0; $i < count($photos); $i++) {
             $photo = $photos[$i];
-            $name = sha1(date('YmdHis') . Str::random(30));
-            $save_name = $name . '.' . $photo->getClientOriginalExtension();
+            // $name = sha1(date('YmdHis') . Str::random(30));
+            $new_name = $photo->getClientOriginalName();
+            // $save_name = $name . '.' . $photo->getClientOriginalExtension();
             $fileSizeInByte = File::size($photo);
             // $resize_name = $name . Str::random(2) . '.' . $photo->getClientOriginalExtension();
 
             if ($request->hasFile('file')) {
-                $save_name = $name . '.' . $photo->getClientOriginalExtension();
+                // $save_name = $name . '.' . $photo->getClientOriginalExtension();
+                $save_name = $new_name;
                 $photo->storeAs('public/downloads', $save_name);
             }
             // $path = $photo->move($this->photos_path, $save_name);

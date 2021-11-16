@@ -29,13 +29,13 @@
     @if (session('locale') == 'en')
         <!-- Page Banner Section -->
         <section class="page-banner">
-            <div class="image-layer lazy-image" data-bg="url('../../public/assets/images/mptfs-imgs/Blog - Banner.jpg')"></div>
+            <div class="image-layer lazy-image" data-bg="url('../../public/assets/images/mptfs-imgs/Blog-Banner.webp')"></div>
             <div class="bottom-rotten-curve"></div>
 
             <div class="auto-container">
                 <h1>{{__('news.blog_detail_heading')}}</h1>
                 <ul class="bread-crumb clearfix">
-                    <li><a href="#">{{__('news.home')}}</a></li>
+                    <li><a href="{{ route('mptfs.home') }}">{{__('news.home')}}</a></li>
                     <li class="active">{{__('news.blog_detail_heading')}}</li>
                 </ul>
             </div>
@@ -48,7 +48,7 @@
                 <div class="row clearfix">
 
                     <!--Content Side / Blog Sidebar-->
-                    <div class="content-side col-lg-8 col-md-12 col-sm-12">
+                    <div class="content-side col-lg-8 col-md-12 col-sm-12 offset-lg-2">
 
                         <!--Blog Posts-->
                         <div class="blog-post-detail">
@@ -65,14 +65,13 @@
 
                                 <div class="content text-justify">
                                     <div class="image-box">
-                                        <figure class="image"><img class="lazy-image" src="images/resource/image-spacer-for-validation.png" data-src="{{ asset('public/storage/post/'. $post->image) }}" alt=""></figure>
+                                        <figure class="image"><img class="lazy-image" data-src="{{ asset('public/storage/post/'. $post->image) }}" alt=""></figure>
                                     </div>
                                     <p>{!! html_entity_decode($post->body) !!}</p>
                                 </div>
                             </div>
 
-                            <div class="post-share-options clearfix">
-
+                            {{-- <div class="post-share-options clearfix">
                                 <div class="social-links pull-right">
                                     <p>{{__('news.share')}}</p>
                                     <ul class="social-icons">
@@ -82,7 +81,7 @@
                                         <li><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
                                     </ul>
                                 </div>
-                            </div>
+                            </div> --}}
                         </div>
 
                         <!-- Comments Area -->
@@ -92,7 +91,7 @@
                                 @foreach($post->comments as $comment)
                                     <div class="comment-box">
                                         <div class="comment">
-                                            <div class="author-thumb"><img class="lazy-image" src="images/resource/image-spacer-for-validation.png" data-src="{{ asset('public/storage/profile/'. $comment->user->image)}}" alt=""></div>
+                                            <div class="author-thumb"><img class="lazy-image" data-src="{{ asset('public/storage/profile/'. $comment->user->image)}}" alt=""></div>
                                             <div class="comment-info">
                                                 <h4 class="name">{{ $comment->user->name }}</h4>
                                                 <div class="time">on {{ $comment->created_at->diffForHumans() }}</div>
@@ -136,7 +135,7 @@
                     </div>
 
                     <!--Sidebar Side-->
-                    <div class="sidebar-side col-lg-4 col-md-12 col-sm-12">
+                    {{-- <div class="sidebar-side col-lg-4 col-md-12 col-sm-12">
                         <aside class="sidebar">
 
                             <!-- Search -->
@@ -180,7 +179,7 @@
                             </div>
 
                         </aside>
-                    </div>
+                    </div> --}}
 
                 </div>
             </div>
@@ -191,13 +190,13 @@
     @if (session('locale') == 'hi')
         <!-- Page Banner Section -->
         <section class="page-banner">
-            <div class="image-layer lazy-image" data-bg="url('../../public/assets/images/mptfs-imgs/Blog - Banner.jpg')"></div>
+            <div class="image-layer lazy-image" data-bg="url('../../public/assets/images/mptfs-imgs/Blog-Banner.webp')"></div>
             <div class="bottom-rotten-curve"></div>
 
             <div class="auto-container">
                 <h1>{{__('news.blog_detail_heading')}}</h1>
                 <ul class="bread-crumb clearfix">
-                    <li><a href="index.html">{{__('news.home')}}</a></li>
+                    <li><a href="{{ route('mptfs.home') }}">{{__('news.home')}}</a></li>
                     <li class="active">{{__('news.blog_detail_heading')}}</li>
                 </ul>
             </div>
@@ -210,7 +209,7 @@
                 <div class="row clearfix">
 
                     <!--Content Side / Blog Sidebar-->
-                    <div class="content-side col-lg-8 col-md-12 col-sm-12">
+                    <div class="content-side col-lg-8 col-md-12 col-sm-12 offset-lg-2">
 
                         <!--Blog Posts-->
                         <div class="blog-post-detail">
@@ -226,14 +225,13 @@
                                 <h2>{{ $post->title }}</h2>
 
                                 <div class="content">
-                                    <figure class="image"><img class="lazy-image" src="images/resource/image-spacer-for-validation.png" data-src="{{ asset('public/storage/post-hindi/'. $post->image) }}" alt=""></figure>
+                                    <figure class="image"><img class="lazy-image" data-src="{{ asset('public/storage/post-hindi/'. $post->image) }}" alt=""></figure>
                                     <br>
                                     <p>{!! html_entity_decode($post->body) !!}</p>
                                 </div>
                             </div>
 
-                            <div class="post-share-options clearfix">
-
+                            {{-- <div class="post-share-options clearfix">
                                 <div class="social-links pull-right">
                                     <p>{{__('news.share')}}</p>
                                     <ul class="social-icons">
@@ -243,7 +241,7 @@
                                         <li><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
                                     </ul>
                                 </div>
-                            </div>
+                            </div> --}}
                         </div>
 
                         <!-- Comments Area -->
@@ -253,7 +251,7 @@
                                 @foreach($post->comments as $comment)
                                     <div class="comment-box">
                                         <div class="comment">
-                                            <div class="author-thumb"><img class="lazy-image" src="images/resource/image-spacer-for-validation.png" data-src="{{ asset('public/storage/profile/'. $comment->user->image)}}" alt=""></div>
+                                            <div class="author-thumb"><img class="lazy-image" data-src="{{ asset('public/storage/profile/'. $comment->user->image)}}" alt=""></div>
                                             <div class="comment-info">
                                                 <h4 class="name">{{ $comment->user->name }}</h4>
                                                 <div class="time">on {{ $comment->created_at->diffForHumans() }}</div>
@@ -297,7 +295,7 @@
                     </div>
 
                     <!--Sidebar Side-->
-                    <div class="sidebar-side col-lg-4 col-md-12 col-sm-12">
+                    {{-- <div class="sidebar-side col-lg-4 col-md-12 col-sm-12">
                         <aside class="sidebar">
 
                             <!-- Search -->
@@ -312,7 +310,7 @@
                             </div>
 
                             <!-- Category Widget -->
-                            {{-- <div class="sidebar-widget categories">
+                            <div class="sidebar-widget categories">
                                 <h3 class="sidebar-title">Categories</h3>
                                 @foreach ($categories as $category)
                                     <div class="widget-content">
@@ -321,7 +319,7 @@
                                         </ul>
                                     </div>
                                 @endforeach
-                            </div> --}}
+                            </div>
 
                             <!-- Post Widget -->
                             <div class="sidebar-widget popular-posts">
@@ -341,7 +339,7 @@
                             </div>
 
                         </aside>
-                    </div>
+                    </div> --}}
 
                 </div>
             </div>

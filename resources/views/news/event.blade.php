@@ -11,13 +11,13 @@
     @if (session('locale') == 'en')
         <!-- Page Banner Section -->
         <section class="page-banner">
-            <div class="image-layer lazy-image" data-bg="url('../public/assets/images/mptfs-imgs/Latest Events - Banner.jpg')"></div>
+            <div class="image-layer lazy-image" data-bg="url('../public/assets/images/mptfs-imgs/Latest-Events-Banner.webp')"></div>
             <div class="bottom-rotten-curve"></div>
 
             <div class="auto-container">
                 <h1>{{__('news.event_heading')}}</h1>
                 <ul class="bread-crumb clearfix">
-                    <li><a href="index.html">{{__('news.home')}}</a></li>
+                    <li><a href="{{ route('mptfs.home') }}">{{__('news.home')}}</a></li>
                     <li class="active">{{__('news.event_heading')}}</li>
                 </ul>
             </div>
@@ -36,7 +36,7 @@
                         <div class="auto-container">
 
                             <div class="sec-title centered">
-                                <div class="sub-title">{{__('news.upcoming_event_title')}}</div>
+                                {{-- <div class="sub-title">{{__('news.upcoming_event_title')}}</div> --}}
                                 <h2>{{__('news.our_events_heading')}}</h2>
                             </div>
 
@@ -49,7 +49,7 @@
                                             <div class="row clearfix">
                                                 <div class="title-column col-lg-6 col-md-12 col-sm-12">
                                                     <div class="inner">
-                                                        <div class="image-box"><a href="#"><img class="lazy-image" src="{{asset('public/assets/images/main-slider/devendra (8).jpg')}}" data-src="{{asset('public/storage/event-english/'.$event->image)}}" alt=""></a></div>
+                                                        <div class="image-box"><a href="{{route('event.detail', $event->slug)}}"><img class="lazy-image" src="{{asset('public/assets/images/main-slider/devendra (8).jpg')}}" data-src="{{asset('public/storage/event-english/'.$event->image)}}" alt=""></a></div>
                                                         <div class="title"><h3><a href="{{route('event.detail', $event->slug)}}">{{Str::limit($event->title, '25')}}</a></h3></div>
                                                     </div>
                                                 </div>
@@ -119,13 +119,13 @@
     @if (session('locale') == 'hi')
         <!-- Page Banner Section -->
         <section class="page-banner">
-            <div class="image-layer lazy-image" data-bg="url('../public/assets/images/mptfs-imgs/Latest Events - Banner.jpg')"></div>
+            <div class="image-layer lazy-image" data-bg="url('../public/assets/images/mptfs-imgs/Latest-Events-Banner.webp')"></div>
             <div class="bottom-rotten-curve"></div>
 
             <div class="auto-container">
                 <h1>{{__('news.event_heading')}}</h1>
                 <ul class="bread-crumb clearfix">
-                    <li><a href="index.html">{{__('news.home')}}</a></li>
+                    <li><a href="{{ route('mptfs.home') }}">{{__('news.home')}}</a></li>
                     <li class="active">{{__('news.event_heading')}}</li>
                 </ul>
             </div>
@@ -144,7 +144,7 @@
                         <div class="auto-container">
 
                             <div class="sec-title centered">
-                                <div class="sub-title">{{__('news.upcoming_event_title')}}</div>
+                                {{-- <div class="sub-title">{{__('news.upcoming_event_title')}}</div> --}}
                                 <h2>{{__('news.our_events_heading')}}</h2>
                             </div>
 
@@ -157,7 +157,7 @@
                                             <div class="row clearfix">
                                                 <div class="title-column col-lg-6 col-md-12 col-sm-12">
                                                     <div class="inner">
-                                                        <div class="image-box"><a href="#"><img class="lazy-image" src="{{asset('public/assets/images/main-slider/devendra (8).jpg')}}" data-src="{{asset('public/storage/event-hindi/'.$event->image)}}" alt=""></a></div>
+                                                        <div class="image-box"><a href="{{route('event.detail', $event->slug)}}"><img class="lazy-image" src="{{asset('public/assets/images/main-slider/devendra (8).jpg')}}" data-src="{{asset('public/storage/event-hindi/'.$event->image)}}" alt=""></a></div>
                                                         <div class="title"><h3><a href="{{route('event.detail', $event->slug)}}">{{Str::limit($event->title, '25')}}</a></h3></div>
                                                     </div>
                                                 </div>

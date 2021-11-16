@@ -3,6 +3,14 @@
     <div class="icon"></div>
 </div>
 
+<!-- Floating Social Media Icons -->
+<div class="social-icons">
+    <a href="https://www.facebook.com/mptigerfoundationsociety" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i>Facebook</a>
+    <a href="https://www.youtube.com/channel/UCt7TIvdCEW4iUsxUqmSqswA" target="_blank" class="youtube"><i class="fab fa-youtube"></i>Youtube</a>
+    <a href="https://www.twitter.com/mptfs" target="_blank" class="twitter"><i class="fab fa-twitter"></i>Twitter</a>
+    <a href="https://www.instagram.com/mptfs.official/" target="_blank" class="instagram"><i class="fab fa-instagram"></i>Instagram</a>
+</div>
+
 <!-- Main Header -->
 <header class="main-header">
     <!-- Header Top -->
@@ -15,6 +23,7 @@
                         <li><a href="https://www.facebook.com/mptigerfoundationsociety" target="_blank"><span class="fab fa-facebook-f"></span></a></li>
                         <li><a href="https://www.twitter.com/mptfs" target="_blank"><span class="fab fa-twitter"></span></a></li>
                         <li><a href="https://www.youtube.com/channel/UCt7TIvdCEW4iUsxUqmSqswA" target="_blank"><span class="fab fa-youtube"></span></a></li>
+                        <li><a href="https://www.instagram.com/mptfs.official/" target="_blank"><span class="fab fa-instagram"></span></a></li>
                         {{-- <li><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
                         <li><a href="#"><span class="fab fa-pinterest-p"></span></a></li> --}}
                     </ul>
@@ -67,32 +76,44 @@
                                 <li class="{{ '/contact' == request()->path() ? 'current ' : '' }} dropdown"><a>{{__('navbar.menu_know_more')}}</a>
                                     <ul>
                                         <li><a href="{{ url('know-more/about_mptfs') }}">{{__('navbar.menu_about_mptfs')}}</a></li>
-                                        <li><a href="{{ url('know-more/governing_body') }}">{{__('navbar.menu_governing_body')}}</a></li>
-                                        <li><a href="{{ url('know-more/project_tiger') }}">{{__('navbar.menu_tiger_state')}}</a></li>
+                                        <li><a href="{{ url('know-more/organizational_structure') }}">{{__('navbar.menu_organizational_structure')}}</a></li>
+                                        <li><a href="{{ url('know-more/tiger-state-mp') }}">{{__('navbar.menu_tiger_state')}}</a></li>
+                                        <li><a href="{{ url('our-work/tiger-reserve') }}">{{__('navbar.menu_tiger_reserve_of_mp')}}</a></li>
+                                        <li class="dropdown"><a>{{ __('navbar.menu_our_works') }}</a>
+                                            <ul>
+                                                <li><a href="{{ url('our-work/training') }}">{{__('navbar.menu_training_and_research')}}</a></li>
+                                                <li><a href="{{ url('our-work/awareness') }}">{{__('navbar.menu_awareness_initiatives')}}</a></li>
+                                            </ul>
+                                        </li>
                                     </ul>
                                 </li>
-                                <li class="dropdown"><a>{{__('navbar.menu_our_works')}}</a>
+                                {{-- <li class="dropdown"><a>{{__('navbar.menu_our_works')}}</a>
                                     <ul>
                                         <li><a href="{{ url('our-work/training') }}">{{__('navbar.menu_training_and_research')}}</a></li>
-                                        {{-- <li><a href="{{ url('our-work/bcrlip') }}">{{__('navbar.menu_bcrlip')}}</a></li> --}}
+                                        <li><a href="{{ url('our-work/bcrlip') }}">{{__('navbar.menu_bcrlip')}}</a></li>
                                         <li><a href="{{ url('our-work/awareness') }}">{{__('navbar.menu_awareness_initiatives')}}</a></li>
                                         <li><a href="{{ url('our-work/tiger-reserve') }}">{{__('navbar.menu_tiger_reserve_of_mp')}}</a></li>
-                                        {{-- <li><a href="{{ url('/') }}">{{__('navbar.menu_other_pa_of_mp')}}</a></li> --}}
+                                        <li><a href="{{ url('/') }}">{{__('navbar.menu_other_pa_of_mp')}}</a></li>
                                     </ul>
-                                </li>
+                                </li> --}}
                                 <li class="dropdown"><a>{{__('navbar.menu_get_involved')}}</a>
                                     <ul>
                                         <li><a href="{{ url('get-involved/support') }}">{{__('navbar.menu_support')}}</a></li>
-                                        <li><a href="{{ url('get-involved/love') }}" target="_blank">{{__('navbar.menu_love')}}</a></li>
+                                        <li><a href="{{ url('i-love-wildlife') }}" target="_blank">{{__('navbar.menu_love')}}</a></li>
                                         <li><a href="https://mptiger.mponline.gov.in/" target="_blank">{{__('navbar.menu_donate')}}</a></li>
                                         {{-- <li><a href="{{ url('/') }}">{{__('navbar.menu_volunteer')}}</a></li> --}}
                                         <li><a href="{{ url('get-involved/our-partners') }}">{{__('navbar.menu_partners')}}</a></li>
                                     </ul>
                                 </li>
+
+                                <li>
+                                    <a href="{{ url('news-corner/blog') }}">{{__('navbar.menu_our_blog')}}</a>
+                                </li>
+
                                 <li class="dropdown"><a>{{__('navbar.menu_news_corner')}}</a>
                                     <ul>
-                                        <li><a href="{{ url('news-corner/blog') }}">{{__('navbar.menu_our_blog')}}</a></li>
-                                        <li><a href="{{ url('news-corner/news') }}">{{__('navbar.menu_latest_news')}}</a></li>
+                                        {{-- <li><a href="{{ url('news-corner/blog') }}">{{__('navbar.menu_our_blog')}}</a></li> --}}
+                                        {{-- <li><a href="{{ url('news-corner/news') }}">{{__('navbar.menu_latest_news')}}</a></li> --}}
                                         <li><a href="{{ url('news-corner/event') }}">{{__('navbar.menu_latest_events')}}</a></li>
                                         <li><a href="{{ url('news-corner/downloads') }}">{{__('navbar.menu_downloads')}}</a></li>
                                     </ul>
@@ -144,11 +165,10 @@
             <!--Social Links-->
             <div class="social-links">
                 <ul class="clearfix">
-                    <li><a href="#"><span class="fab fa-twitter"></span></a></li>
-                    <li><a href="#"><span class="fab fa-facebook-square"></span></a></li>
-                    <li><a href="#"><span class="fab fa-pinterest-p"></span></a></li>
-                    <li><a href="#"><span class="fab fa-instagram"></span></a></li>
-                    <li><a href="#"><span class="fab fa-youtube"></span></a></li>
+                    <li><a href="https://www.facebook.com/mptigerfoundationsociety"><span class="fab fa-facebook-square"></span></a></li>
+                    <li><a href="https://www.twitter.com/mptfs"><span class="fab fa-twitter"></span></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCt7TIvdCEW4iUsxUqmSqswA"><span class="fab fa-youtube"></span></a></li>
+                    <li><a href="https://www.instagram.com/mptfs.official/"><span class="fab fa-instagram"></span></a></li>
                 </ul>
             </div>
         </nav>

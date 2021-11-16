@@ -13,49 +13,41 @@ class PostController extends Controller
     public function details($slug)
     {
         // Article Details For English Language
-        if(session('locale') == 'en'){
+        if (session('locale') == 'en') {
             $post = Post::where('slug', $slug)->approved()->published()->first();
 
-            if($post)
-            {
+            if ($post) {
                 $post = Post::where('slug', $slug)->approved()->published()->first();
-                $blogKey = 'blog_'.$post->id;
+                $blogKey = 'blog_' . $post->id;
 
-                if(!Session::has($blogKey))
-                {
+                if (!Session::has($blogKey)) {
                     $post->increment('view_count');
                     Session::put($blogKey, 1);
                 }
                 $randomposts = Post::approved()->published()->take(3)->inRandomOrder()->get();
                 $categories = Category::all();
                 return view('blog.post', compact('post', 'randomposts', 'categories'));
-            }
-            else
-            {
+            } else {
                 return redirect()->back();
             }
         }
 
         // Article Details For Hindi Language
-        if(session('locale') == 'hi'){
+        if (session('locale') == 'hi') {
             $post = PostHindi::where('slug', $slug)->approved()->published()->first();
 
-            if($post)
-            {
+            if ($post) {
                 $post = PostHindi::where('slug', $slug)->approved()->published()->first();
-                $blogKey = 'blog_'.$post->id;
+                $blogKey = 'blog_' . $post->id;
 
-                if(!Session::has($blogKey))
-                {
+                if (!Session::has($blogKey)) {
                     $post->increment('view_count');
                     Session::put($blogKey, 1);
                 }
                 $randomposts = PostHindi::approved()->published()->take(3)->inRandomOrder()->get();
                 $categories = Category::all();
                 return view('blog.post', compact('post', 'randomposts', 'categories'));
-            }
-            else
-            {
+            } else {
                 return redirect()->back();
             }
         }
@@ -63,17 +55,13 @@ class PostController extends Controller
 
     public function postByCategory($slug)
     {
-        $categories = Category::where('slug',$slug)->first();
+        $categories = Category::where('slug', $slug)->first();
 
-        if($categories)
-        {
+        if ($categories) {
             $posts = $categories->posts()->approved()->published()->latest()->paginate(6);
-            return view('blog.category',compact('categories','posts'));
-        }
-        else
-        {
+            return view('blog.category', compact('categories', 'posts'));
+        } else {
             return redirect()->back();
         }
-
     }
 }

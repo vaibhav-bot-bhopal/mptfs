@@ -19,14 +19,14 @@
     @if (session('locale') == 'en')
         <!-- Page Banner Section -->
         <section class="page-banner">
-            <div class="image-layer lazy-image" data-bg="url('../../public/assets/images/background/tiger.jpg')"></div>
+            <div class="image-layer lazy-image" data-bg="url('../../public/assets/images/mptfs-imgs/Tiger_Initiative.webp')"></div>
             <div class="bottom-rotten-curve"></div>
 
             <div class="auto-container">
-                <h1>{{__('work.aware_heading_detail')}}</h1>
+                <h1>{{$awareness->title}}</h1>
                 <ul class="bread-crumb clearfix">
-                    <li><a href="#">{{__('work.home')}}</a></li>
-                    <li class="active">{{__('work.aware_heading_detail')}}</li>
+                    <li><a href="{{ route('mptfs.home') }}">{{__('work.home')}}</a></li>
+                    <li class="active">{{$awareness->title}}</li>
                 </ul>
             </div>
 
@@ -45,7 +45,7 @@
                             <div class="inner-box">
                                 <div class="image-box">
                                     <figure class="image">
-                                        <img class="lazy-image loaded" src="images/resource/image-spacer-for-validation.png" data-src="{{asset('public/storage/awareness-english/'. $awareness->image)}}" alt="">
+                                        <img class="lazy-image loaded" data-src="{{asset('public/storage/awareness-english/'. $awareness->image)}}" alt="">
                                     </figure>
                                     <a href="{{asset('public/storage/awareness-english/'. $awareness->image)}}" class="lightbox-image icon"><span class="fa fa-search"></span></a>
                                 </div>
@@ -80,7 +80,7 @@
                         <h2>{{__('work.aware_rel_images')}}</h2>
                     </div>
 
-                    <div class="related-products-carousel love-carousel owl-theme owl-carousel" data-options='{"loop": true, "margin": 30, "autoheight":true, "lazyload":true, "nav": true, "dots": true, "autoplay": true, "autoplayTimeout": 5000, "smartSpeed": 500, "responsive":{ "0" :{ "items": "1" },"600" :{ "items": "1" }, "800" :{ "items" : "2" }, "1024":{ "items" : "3" }, "1366":{ "items" : "3" }}}'>
+                    <div class="related-products-carousel love-carousel owl-theme owl-carousel" data-options='{"loop": false, "margin": 30, "autoheight":true, "lazyload":true, "nav": true, "dots": true, "autoplay": true, "autoplayTimeout": 5000, "smartSpeed": 500, "responsive":{ "0" :{ "items": "1" },"600" :{ "items": "1" }, "800" :{ "items" : "2" }, "1024":{ "items" : "3" }, "1366":{ "items" : "3" }}}'>
                         <!--Shop Item-->
                         @foreach(explode(',', $awareness->m_image) as $aware)
                         <div class="shop-item">
@@ -108,14 +108,14 @@
     @if (session('locale') == 'hi')
         <!-- Page Banner Section -->
         <section class="page-banner">
-            <div class="image-layer lazy-image" data-bg="url('../../public/assets/images/background/tiger.jpg')"></div>
+            <div class="image-layer lazy-image" data-bg="url('../../public/assets/images/mptfs-imgs/Tiger_Initiative.webp')"></div>
             <div class="bottom-rotten-curve"></div>
 
             <div class="auto-container">
-                <h1>{{__('work.aware_heading_detail')}}</h1>
+                <h1>{{$awareness->title}}</h1>
                 <ul class="bread-crumb clearfix">
-                    <li><a href="index.html">{{__('work.home')}} </a></li>
-                    <li class="active">{{__('work.aware_heading_detail')}}</li>
+                    <li><a href="{{ route('mptfs.home') }}">{{__('work.home')}} </a></li>
+                    <li class="active">{{$awareness->title}}</li>
                 </ul>
             </div>
 
@@ -133,7 +133,7 @@
                         <div class="event-details">
                             <div class="inner-box">
                                 <div class="image-box">
-                                    <figure class="image"><img class="lazy-image" src="images/resource/image-spacer-for-validation.png" data-src="{{asset('public/storage/awareness-hindi/'. $awareness->image)}}" alt=""></figure>
+                                    <figure class="image"><img class="lazy-image" data-src="{{asset('public/storage/awareness-hindi/'. $awareness->image)}}" alt=""></figure>
                                 </div>
                                 <div class="lower-content">
                                     <h2>{{$awareness->title}}</h2>
@@ -162,7 +162,7 @@
                     <h2>{{__('work.aware_rel_images')}}</h2>
                 </div>
 
-                <div class="related-products-carousel love-carousel owl-theme owl-carousel" data-options='{"loop": true, "margin": 30, "autoheight":true, "lazyload":true, "nav": true, "dots": true, "autoplay": true, "autoplayTimeout": 5000, "smartSpeed": 500, "responsive":{ "0" :{ "items": "1" },"600" :{ "items": "1" }, "800" :{ "items" : "2" }, "1024":{ "items" : "3" }, "1366":{ "items" : "3" }}}'>
+                <div class="related-products-carousel love-carousel owl-theme owl-carousel" data-options='{"loop": false, "margin": 30, "autoheight":true, "lazyload":true, "nav": true, "dots": true, "autoplay": true, "autoplayTimeout": 5000, "smartSpeed": 500, "responsive":{ "0" :{ "items": "1" },"600" :{ "items": "1" }, "800" :{ "items" : "2" }, "1024":{ "items" : "3" }, "1366":{ "items" : "3" }}}'>
                     <!--Shop Item-->
                     @foreach(explode(',', $awareness->m_image) as $aware)
                     <div class="shop-item">

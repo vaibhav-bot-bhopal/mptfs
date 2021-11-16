@@ -39,10 +39,10 @@
                     <div class="col-12">
                         <div class="card">
                             <div class="card-header d-flex">
-                            <h3 class="card-title">
-                                ALL CATEGORY LIST
-                                <span class="badge badge-info pt-1 pb-1 pl-2 pr-2 ml-1" data-toggle="tooltip" data-placement="top" title="Total Number of Categories" style="font-size: 18px; font-weight: 500;">{{ $categories->count() }}</span>
-                            </h3>
+                                <h3 class="card-title">
+                                    ALL CATEGORY LIST
+                                    <span class="badge badge-info pt-1 pb-1 pl-2 pr-2 ml-1" data-toggle="tooltip" data-placement="top" title="Total Number of Categories" style="font-size: 18px; font-weight: 500;">{{ $categories->count() }}</span>
+                                </h3>
                             <a class="btn btn-success ml-auto" href="{{route('admin.category.create')}}"><i class="nav-icon fas fa-plus-circle" style="margin-right: 5px;"></i>ADD NEW CATEGORY</a>
                             </div>
                             <!-- /.card-header -->

@@ -23,13 +23,13 @@
     @if (session('locale') == 'en')
         <!-- Page Banner Section -->
         <section class="page-banner">
-            <div class="image-layer lazy-image" data-bg="url('../public/assets/images/mptfs-imgs/Other-PA(s).jpg')"></div>
+            <div class="image-layer lazy-image" data-bg="url('../public/assets/images/mptfs-imgs/Other-PA(s).webp')"></div>
             <div class="bottom-rotten-curve"></div>
 
             <div class="auto-container">
                 <h1>{{__('home.gallery_page_heading')}}</h1>
                 <ul class="bread-crumb clearfix">
-                    <li><a href="index.html">{{__('home.home')}}</a></li>
+                    <li><a href="{{ route('mptfs.home') }}">{{__('home.home')}}</a></li>
                     <li class="active">{{__('home.gallery_page_heading')}}</li>
                 </ul>
             </div>
@@ -90,13 +90,13 @@
     @if (session('locale') == 'hi')
         <!-- Page Banner Section -->
         <section class="page-banner">
-            <div class="image-layer lazy-image" data-bg="url('../public/assets/images/background/tiger.jpg')"></div>
+            <div class="image-layer lazy-image" data-bg="url('../public/assets/images/mptfs-imgs/Other-PA(s).webp')"></div>
             <div class="bottom-rotten-curve"></div>
 
             <div class="auto-container">
                 <h1>गैलरी</h1>
                 <ul class="bread-crumb clearfix">
-                    <li><a href="index.html">होम</a></li>
+                    <li><a href="{{ route('mptfs.home') }}">होम</a></li>
                     <li class="active">गैलरी</li>
                 </ul>
             </div>

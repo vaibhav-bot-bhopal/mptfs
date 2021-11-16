@@ -11,13 +11,13 @@ class KnowMoreController extends Controller
         return view('know-more.about_mptfs');
     }
 
-    public function governing_body()
+    public function organizationalStructure()
     {
-        return view('know-more.governing_body');
+        return view('know-more.organizational_structure');
     }
 
-    public function project_tiger()
+    public function tigerState()
     {
-        return view('know-more.project_tiger');
+        return view('know-more.tiger_state_mp');
     }
 }

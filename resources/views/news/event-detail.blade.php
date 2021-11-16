@@ -19,13 +19,13 @@
     @if (session('locale') == 'en')
         <!-- Page Banner Section -->
         <section class="page-banner">
-            <div class="image-layer lazy-image" data-bg="url('../../public/assets/images/mptfs-imgs/Latest Events - Banner.jpg')"></div>
+            <div class="image-layer lazy-image" data-bg="url('../../public/assets/images/mptfs-imgs/Latest-Events-Banner.webp')"></div>
             <div class="bottom-rotten-curve"></div>
 
             <div class="auto-container">
                 <h1>{{__('news.event_detail_heading')}}</h1>
                 <ul class="bread-crumb clearfix">
-                    <li><a href="index.html">{{__('news.home')}}</a></li>
+                    <li><a href="{{ route('mptfs.home') }}">{{__('news.home')}}</a></li>
                     <li class="active">{{__('news.event_detail_heading')}}</li>
                 </ul>
             </div>
@@ -45,7 +45,7 @@
                             <div class="inner-box">
                                 <div class="image-box">
                                     <figure class="image">
-                                        <img class="lazy-image loaded" src="images/resource/image-spacer-for-validation.png" data-src="{{asset('public/storage/event-english/'. $events->image)}}" alt="">
+                                        <img class="lazy-image loaded" data-src="{{asset('public/storage/event-english/'. $events->image)}}" alt="">
                                     </figure>
                                     <a href="{{asset('public/storage/event-english/'. $events->image)}}" class="lightbox-image icon"><span class="fa fa-search"></span></a>
                                 </div>
@@ -79,7 +79,7 @@
                         <h2>{{__('news.related_imgs_heading')}}</h2>
                     </div>
 
-                    <div class="related-products-carousel love-carousel owl-theme owl-carousel" data-options='{"loop": true, "margin": 30, "autoheight":true, "lazyload":true, "nav": true, "dots": true, "autoplay": true, "autoplayTimeout": 5000, "smartSpeed": 500, "responsive":{ "0" :{ "items": "1" },"600" :{ "items": "1" }, "800" :{ "items" : "2" }, "1024":{ "items" : "3" }, "1366":{ "items" : "3" }}}'>
+                    <div class="related-products-carousel love-carousel owl-theme owl-carousel" data-options='{"loop": false, "margin": 30, "autoheight":true, "lazyload":true, "nav": true, "dots": true, "autoplay": true, "autoplayTimeout": 5000, "smartSpeed": 500, "responsive":{ "0" :{ "items": "1" },"600" :{ "items": "1" }, "800" :{ "items" : "2" }, "1024":{ "items" : "3" }, "1366":{ "items" : "3" }}}'>
                         <!--Shop Item-->
                         @foreach(explode(',', $events->m_image) as $event)
                         <div class="shop-item">
@@ -97,8 +97,6 @@
                         @endforeach
                     </div>
                 @endif
-
-
             </div>
         </section>
         <!--End Related Images -->
@@ -107,13 +105,13 @@
     @if (session('locale') == 'hi')
         <!-- Page Banner Section -->
         <section class="page-banner">
-            <div class="image-layer lazy-image" data-bg="url('../../public/assets/images/mptfs-imgs/Latest Events - Banner.jpg')"></div>
+            <div class="image-layer lazy-image" data-bg="url('../../public/assets/images/mptfs-imgs/Latest-Events-Banner.webp')"></div>
             <div class="bottom-rotten-curve"></div>
 
             <div class="auto-container">
                 <h1>{{__('news.event_detail_heading')}}</h1>
                 <ul class="bread-crumb clearfix">
-                    <li><a href="#">{{__('news.home')}}</a></li>
+                    <li><a href="{{ route('mptfs.home') }}">{{__('news.home')}}</a></li>
                     <li class="active">{{__('news.event_detail_heading')}}</li>
                 </ul>
             </div>
@@ -165,7 +163,7 @@
                         <h2>{{__('news.related_imgs_heading')}}</h2>
                     </div>
 
-                    <div class="related-products-carousel love-carousel owl-theme owl-carousel" data-options='{"loop": true, "margin": 30, "autoheight":true, "lazyload":true, "nav": true, "dots": true, "autoplay": true, "autoplayTimeout": 5000, "smartSpeed": 500, "responsive":{ "0" :{ "items": "1" },"600" :{ "items": "1" }, "800" :{ "items" : "2" }, "1024":{ "items" : "3" }, "1366":{ "items" : "3" }}}'>
+                    <div class="related-products-carousel love-carousel owl-theme owl-carousel" data-options='{"loop": false, "margin": 30, "autoheight":true, "lazyload":true, "nav": true, "dots": true, "autoplay": true, "autoplayTimeout": 5000, "smartSpeed": 500, "responsive":{ "0" :{ "items": "1" },"600" :{ "items": "1" }, "800" :{ "items" : "2" }, "1024":{ "items" : "3" }, "1366":{ "items" : "3" }}}'>
                         <!--Shop Item-->
                         @foreach(explode(',', $events->m_image) as $event)
                         <div class="shop-item">

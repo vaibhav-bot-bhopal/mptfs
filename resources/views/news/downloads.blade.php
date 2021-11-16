@@ -23,13 +23,13 @@
     @if (session('locale') == 'en')
         <!-- Page Banner Section -->
         <section class="page-banner">
-            <div class="image-layer lazy-image" data-bg="url('../public/assets/images/mptfs-imgs/Other-PA(s).jpg')"></div>
+            <div class="image-layer lazy-image" data-bg="url('../public/assets/images/mptfs-imgs/Other-PA(s).webp')"></div>
             <div class="bottom-rotten-curve"></div>
 
             <div class="auto-container">
                 <h1>{{__('home.downloads_heading')}}</h1>
                 <ul class="bread-crumb clearfix">
-                    <li><a href="#">{{__('home.home')}}</a></li>
+                    <li><a href="{{ route('mptfs.home') }}">{{__('home.home')}}</a></li>
                     <li class="active">{{__('home.downloads_heading')}}</li>
                 </ul>
             </div>
@@ -53,9 +53,13 @@
                             <div class="news-block col-lg-4 col-md-6 col-sm-12">
                                 <div class="inner-box wow fadeInUp" data-wow-delay="0ms">
                                     <div class="overlay-box">
-                                    <div class="image-box">
-                                        <figure class="image"><a href="{{asset('public/storage/downloads/'. $photo->filename)}}" class="lightbox-image" data-fancybox="products"><img class="lazy-image" src="{{asset('public/storage/downloads/'.$photo->filename)}}" alt="{{ $photo->original_filename }}"></a></figure>
-                                    </div>
+                                        <div class="image-box">
+                                            <figure class="image">
+                                                <a href="{{asset('public/storage/downloads/'. $photo->filename)}}" class="lightbox-image" data-fancybox="products">
+                                                    <img class="lazy-image" src="{{asset('public/storage/downloads/'.$photo->filename)}}" alt="{{ $photo->original_filename }}">
+                                                </a>
+                                            </figure>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -90,13 +94,13 @@
     @if (session('locale') == 'hi')
         <!-- Page Banner Section -->
         <section class="page-banner">
-            <div class="image-layer lazy-image" data-bg="url('../public/assets/images/background/tiger.jpg')"></div>
+            <div class="image-layer lazy-image" data-bg="url('../public/assets/images/mptfs-imgs/Other-PA(s).webp')"></div>
             <div class="bottom-rotten-curve"></div>
 
             <div class="auto-container">
                 <h1>{{__('home.downloads_heading')}}</h1>
                 <ul class="bread-crumb clearfix">
-                    <li><a href="#">{{__('home.home')}}</a></li>
+                    <li><a href="{{ route('mptfs.home') }}">{{__('home.home')}}</a></li>
                     <li class="active">{{__('home.downloads_heading')}}</li>
                 </ul>
             </div>
@@ -120,9 +124,9 @@
                             <div class="news-block col-lg-4 col-md-6 col-sm-12">
                                 <div class="inner-box wow fadeInUp" data-wow-delay="0ms">
                                     <div class="overlay-box">
-                                    <div class="image-box">
-                                        <figure class="image"><a href="{{asset('public/storage/downloads/'. $photo->filename)}}" class="lightbox-image" data-fancybox="products"><img class="lazy-image" src="{{asset('public/storage/downloads/'.$photo->filename)}}" alt="{{ $photo->original_filename }}"></a></figure>
-                                    </div>
+                                        <div class="image-box">
+                                            <figure class="image"><a href="{{asset('public/storage/downloads/'. $photo->filename)}}" class="lightbox-image" data-fancybox="products"><img class="lazy-image" src="{{asset('public/storage/downloads/'.$photo->filename)}}" alt="{{ $photo->original_filename }}"></a></figure>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

@@ -27,6 +27,7 @@ use App\Http\Controllers\NewsController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\KnowMoreController;
 use App\Http\Controllers\OurWorkController;
+use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Session;
 
@@ -41,6 +42,10 @@ use Illuminate\Support\Facades\Session;
 |
 */
 
+// Route::get('/linkstorage', function () {
+//     Artisan::call();
+// });
+
 Route::get('language/{lang}', function ($lang) {
     Session::put('locale', $lang);
     return redirect()->back();
@@ -48,6 +53,8 @@ Route::get('language/{lang}', function ($lang) {
 
 Route::get('/', [WelcomeController::class, 'index'])->name('mptfs.home')->middleware('language');
 Route::match(['get', 'post'], '/logout', [LoginController::class, 'logout'])->name('logout');
+
+Route::get('i-love-wildlife', [GetInvolvedController::class, 'love'])->name('love');
 
 Auth::routes();
 
@@ -108,6 +115,7 @@ Route::group(['as' => 'user.', 'prefix' => 'user', 'namespace' => 'App\Http\Cont
     Route::resource('news', 'NewsController');
     Route::resource('event', 'EventController');
     Route::resource('awareness', 'AwarenessController');
+    Route::resource('milestone', 'MilestoneController');
 });
 
 Route::group(['as' => 'author.', 'prefix' => 'author', 'namespace' => 'App\Http\Controllers\Author', 'middleware' => ['auth', 'author', 'prevent-back-history']], function () {
@@ -125,12 +133,13 @@ Route::group(['as' => 'author.', 'prefix' => 'author', 'namespace' => 'App\Http\
 Route::prefix('home')->group(function () {
     Route::get('contact', [WelcomeController::class, 'contact'])->name('home.contact');
     Route::get('gallery', [WelcomeController::class, 'gallery'])->name('home.gallery');
+    Route::get('/milestone/{slug}', [WelcomeController::class, 'milestoneDetail'])->name('home.milestone.detail');
 });
 
 Route::prefix('know-more')->group(function () {
     Route::get('about_mptfs', [KnowMoreController::class, 'about_mptfs'])->name('mptfs.about');
-    Route::get('governing_body', [KnowMoreController::class, 'governing_body'])->name('mptfs.gbody');
-    Route::get('project_tiger', [KnowMoreController::class, 'project_tiger'])->name('mptfs.ptiger');
+    Route::get('organizational_structure', [KnowMoreController::class, 'organizationalStructure'])->name('mptfs.structure');
+    Route::get('tiger-state-mp', [KnowMoreController::class, 'tigerState'])->name('mptfs.tiger.state');
 });
 
 Route::prefix('our-work')->group(function () {
@@ -143,7 +152,7 @@ Route::prefix('our-work')->group(function () {
 
 Route::prefix('get-involved')->group(function () {
     Route::get('support', [GetInvolvedController::class, 'support'])->name('support');
-    Route::get('love', [GetInvolvedController::class, 'love'])->name('love');
+    // Route::get('love', [GetInvolvedController::class, 'love'])->name('love');
     Route::get('our-partners', [GetInvolvedController::class, 'partners'])->name('mptfs.partners');
 });
 

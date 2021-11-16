@@ -3,7 +3,7 @@ return [
     'support_heading' => 'Support Us',
     'home' => 'Home',
     'support_heading_h2' => 'How You may Contribute',
-    'support_div1' => 'You may support MPTFS for wildlife conservation in multiple ways. Though we prefer to accept the support in kind but we also accept donations by means of cheque/draft and online transfers. All donations are eligible for 100% tax benefits under section 80G. We also have FCRA account to accept foreign donation.',
+    'support_div1' => 'You may support MPTFS for wildlife conservation in multiple ways. Though we prefer to accept the support in kind but we also accept donations by means of cheque/draft and online transfers. All donations are eligible for 50% tax benefits under section 80G. Various activities taken up by MPTFS are detailed below:',
     'support_heading_h3' => 'Corporate Social Responsibility',
     'support_div2' => 'Ensuring Environmental Sustainability”, is an activity covered under CSR act which is our core working area. Nevertheless, the firms who want to work in education, healthcare, poverty eradication, vocational skill upgradation or welfare of Scheduled Tribes etc. may also join their hands with us, as the communities living near wildlife areas require these resources more than anyone else and wildlife conservation is actually directly dependent on well-being of these communities.',
     'strength_heading' => 'Strengthening Institute',
@@ -34,7 +34,7 @@ return [
     'love_heading_2' => 'Wildlife',
     'love_heading_pay' => 'NOW YOU CAN DONATE THROUGH UPI PAYMENT',
     'love_para' => 'Now you can contribute for the conservation of tiger  along with other wildlife & their habitats across Madhya Pradesh by contributing/donating to the Madhya Pradesh tiger foundation society which is a society found by Madhya Pradesh forest department to ensure protection of the wildlife by engaging private partners and other helping hands other than government support. You just need to scan the above “QR code” by using any UPI QR code scanner & contribute for the noble cause.',
-    'heart_btn_1' => 'To Donate Through',
-    'heart_btn_2' => 'Click the Button'
-
+    'heart_btn_1' => 'Scan the QR code above to donate directly using any UPI app (GPay, PhonePe, PayTM, BHIM UPI etc)',
+    'heart_btn_2' => 'Or click the above button to donate through ‘Close to my heart’ campaign',
+    'help_para' => 'You may also donate us through either of our below campaigns:',
 ];

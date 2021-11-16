@@ -191,11 +191,11 @@
 
         btnTpl : {
 
-            download : '<a download data-fancybox-download class="fancybox-button fancybox-button--download" title="{{DOWNLOAD}}">' +
-                        '<svg viewBox="0 0 40 40">' +
-                            '<path d="M20,23 L20,8 L20,23 L13,16 L20,23 L27,16 L20,23 M26,28 L13,28 L27,28 L14,28" />' +
-                        '</svg>' +
-                    '</a>',
+            download : '<a download data-fancybox-download class="fancybox-button fancybox-button--download" title="{{DOWNLOAD}}" style="padding-right: 80px;">' +
+                            '<svg viewBox="0 0 40 40">' +
+                                '<path d="M20,23 L20,8 L20,23 L13,16 L20,23 L27,16 L20,23 M26,28 L13,28 L27,28 L14,28" />' +
+                            '</svg>' + 'Download' +
+                        '</a>',
 
             zoom : '<button data-fancybox-zoom class="fancybox-button fancybox-button--zoom" title="{{ZOOM}}">' +
                         '<svg viewBox="0 0 40 40">' +

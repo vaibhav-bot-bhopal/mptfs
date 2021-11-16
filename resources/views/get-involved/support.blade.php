@@ -8,6 +8,19 @@
             list-style-type: disc;
             margin-left: 5px;
         }
+
+        .team-section {
+            padding-bottom: 0;
+        }
+
+        .call-to-action{
+            background-color: #ffffff;
+            padding: 0;
+        }
+
+        .call-to-action .sec-title .text {
+            color: #000000;
+        }
     </style>
 @endpush
 
@@ -15,13 +28,13 @@
 
     <!-- Page Banner Section -->
     <section class="page-banner">
-        <div class="image-layer lazy-image" data-bg="url('../public/assets/images/mptfs-imgs/Support-Banner.jpg')"></div>
+        <div class="image-layer lazy-image" data-bg="url('../public/assets/images/mptfs-imgs/Support-Banner.webp')"></div>
         <div class="bottom-rotten-curve alternate"></div>
 
         <div class="auto-container">
             <h1>{{__('involved.support_heading')}}</h1>
             <ul class="bread-crumb clearfix">
-                <li><a href="#">{{__('involved.home')}}</a></li>
+                <li><a href="{{ route('mptfs.home') }}">{{__('involved.home')}}</a></li>
                 <li class="active">{{__('involved.support_heading')}}</li>
             </ul>
         </div>
@@ -47,7 +60,7 @@
                 <div class="right-column col-lg-6 col-md-12 col-sm-12">
                     <div class="inner">
                         <div class="images clearfix">
-                            <figure class="wow fadeInRight" data-wow-delay="300ms"><img class="lazy-image" src="{{ asset('public/assets/images/mptfs-imgs/Support-Side.jpg') }}" data-src="{{ asset('public/assets/images/mptfs-imgs/Support-Side.jpg') }}" alt=""></figure>
+                            <figure class="wow fadeInRight" data-wow-delay="300ms"><img class="lazy-image" src="{{ asset('public/assets/images/mptfs-imgs/Support-Side.webp') }}" data-src="{{ asset('public/assets/images/mptfs-imgs/Support-Side.webp') }}" alt=""></figure>
                         </div>
                     </div>
                 </div>
@@ -58,7 +71,7 @@
 
     <!--What We Do Section / Style Two-->
     <section class="what-we-do style-two" style="padding: 130px 0 100px!important;">
-		<div class="image-layer lazy-image" data-bg="url('images/background/what-we-do.jpg')"></div>
+		<div class="image-layer lazy-image"></div>
         <div class="bottom-rotten-curve"></div>
 
         <div class="auto-container">
@@ -190,6 +203,21 @@
                                 </li>
                             </ul>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="call-to-action">
+        <!--Image Layer-->
+        <div class="auto-container">
+            <div class="inner" style="max-width: 900px;">
+                <div class="sec-title centered">
+                    <div class="text"><h3 style="text-shadow: 1px 2px 4px rgba(0, 0, 0, .5);">{{__('involved.help_para')}}</h3></div>
+                    <div class="link-box clearfix">
+                        <a href="https://mptiger.mponline.gov.in/" target="_blank" class="theme-btn btn-style-three"><span class="btn-title">{{__('home.btn_donate_cap')}}</span></a>
+                        <a href="{{ route('love') }}" class="theme-btn btn-style-one"><span class="btn-title custom-title">{{__('home.btn_join_cap_1')}} <i class="fa fa-heart" style="font-size: 20px; position: relative; top: 2px; margin: 0 5px;"></i> {{__('home.btn_join_cap_2')}}</span></a>
                     </div>
                 </div>
             </div>

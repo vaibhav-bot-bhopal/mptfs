@@ -48,13 +48,13 @@
 
     <!-- Page Banner Section -->
     <section class="page-banner">
-        <div class="image-layer lazy-image" data-bg="url('../public/assets/images/mptfs-imgs/Support-Banner.jpg')"></div>
+        <div class="image-layer lazy-image" data-bg="url('public/assets/images/mptfs-imgs/tiger-love.webp')"></div>
         <div class="bottom-rotten-curve alternate"></div>
 
         <div class="auto-container">
             <h1>{{__('involved.love_main_heading')}}</h1>
             <ul class="bread-crumb clearfix">
-                <li><a href="#">{{__('involved.home')}}</a></li>
+                <li><a href="{{ route('mptfs.home') }}">{{__('involved.home')}}</a></li>
                 <li class="active">{{__('involved.love_main_heading')}}</li>
             </ul>
         </div>
@@ -103,14 +103,14 @@
 
             <div class="row clearfix">
                 <!--Donation Column-->
-                <div class="left-column col-lg-8 col-md-8 offset-lg-2 offset-md-2">
+                <div class="left-column col-lg-12 col-md-12">
                     <div class="inner">
                         <div class="sec-title mt-5">
-                            <h4 class="text-center" style="font-size: 45px; font-weight: 500; font-family: 'Righteous', cursive;">{{__('involved.heart_btn_1')}}</h4>
+                            <h5 class="text-center">{{__('involved.heart_btn_1')}}</h5>
                             <div class="text-center mt-2">
-                                <a href="https://mptiger.mponline.gov.in/" target="_blank" class="theme-btn btn-style-three"><span class="btn-title" style="font-size: 24px;">{{__('home.btn_donate_cap')}}</span></a>
+                                <a href="https://mptiger.mponline.gov.in/" target="_blank" class="theme-btn btn-style-three"><span class="btn-title cls-to-my-heart-btn">{{__('home.btn_donate_cap')}}</span></a>
                             </div>
-                            <h4 class="text-center" style="font-size: 45px; font-weight: 500; font-family: 'Righteous', cursive;">{{__('involved.heart_btn_2')}}</h4>
+                            <h5 class="text-center">{{__('involved.heart_btn_2')}}</h5>
                         </div>
                     </div>
                 </div>

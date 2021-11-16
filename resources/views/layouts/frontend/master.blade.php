@@ -4,6 +4,9 @@
     <meta charset="utf-8">
     <title>@yield('title')</title>
 
+    <meta name="keywords" content="Madhya Pradesh Tiger Foundation Society, MPTFS, MPTFS Bhopal, Madhya Pradesh Tiger Foundation Society Bhopal, Madhya Pradesh Tiger Foundation Society Official Website, MPTFS Official Website"/>
+    <meta name="description" content="This is the offical website of MPTFS. It was formed by Madhya Pradesh State Government on 15th January 1997. The idea was to facilitate achieving the goal of wildlife conservation (with special emphasis on tiger) by ensuring participation from public and all other organizations committed for conservation."/>
+
     <!-- Responsive -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">

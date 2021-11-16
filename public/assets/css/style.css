@@ -495,7 +495,7 @@ figure {
     transform: translateX(101%);
     /* -webkit-transition: all 800ms ease; */
     -webkit-transition: all 4000ms ease;
-    -moz-transition: all 400ms ease;
+    -moz-transition: all 4000ms ease;
     -ms-transition: all 4000ms ease;
     -o-transition: all 4000ms ease;
     transition: all 4000ms ease;
@@ -2746,7 +2746,8 @@ img {
 
 .service-block h3 {
     position: relative;
-    font-size: 24px;
+    font-size: 34px;
+    /* font-size: 24px; */
     line-height: 1.2em;
     margin: 0 0 12px;
 }

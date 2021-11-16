@@ -14,13 +14,13 @@
 
     <!-- Page Banner Section -->
     <section class="page-banner">
-        <div class="image-layer lazy-image" data-bg="url('../public/assets/images/mptfs-imgs/Training-n-Research-Banner.jpg')"></div>
+        <div class="image-layer lazy-image" data-bg="url('../public/assets/images/mptfs-imgs/Training-n-Research-Banner.webp')"></div>
         <div class="bottom-rotten-curve alternate"></div>
 
         <div class="auto-container">
             <h1>{{__('work.taining_heading')}}</h1>
             <ul class="bread-crumb clearfix">
-                <li><a href="#">{{__('work.home')}}</a></li>
+                <li><a href="{{ route('mptfs.home') }}">{{__('work.home')}}</a></li>
                 <li class="active">{{__('work.taining_heading')}}</li>
             </ul>
         </div>
@@ -91,7 +91,7 @@
                 <div class="right-column col-lg-6 col-md-12 col-sm-12">
                     <div class="inner">
                         <div class="images clearfix">
-                            <figure class="wow fadeInRight" data-wow-delay="300ms"><img class="lazy-image" src="{{ asset('public/assets/images/background/tiger.jpg') }}" data-src="{{ asset('public/assets/images/mptfs-imgs/Training-n-Research-1-Cut-Vertically.jpg') }}" alt=""></figure>
+                            <figure class="wow fadeInRight" data-wow-delay="300ms"><img class="lazy-image" src="{{ asset('public/assets/images/mptfs-imgs/Training-n-Research-1-Cut-Vertically.webp') }}" data-src="{{ asset('public/assets/images/mptfs-imgs/Training-n-Research-1-Cut-Vertically.webp') }}" alt=""></figure>
                         </div>
                     </div>
                 </div>
@@ -102,7 +102,7 @@
 
     <!--What We Do Section / Style Two-->
     <section class="mission-vision" style="padding: 130px 0 100px!important;">
-		<div class="image-layer lazy-image" data-bg="url('images/background/what-we-do.jpg')"></div>
+		<div class="image-layer lazy-image"></div>
         <div class="top-rotten-curve"></div>
         <div class="bottom-rotten-curve"></div>
 
@@ -147,7 +147,7 @@
                                     </div>
                                     <div class="image-column col-lg-6 col-md-12 col-sm-12">
                                         <div class="inner">
-                                            <div class="image wow fadeInLeft" data-wow-delay="0ms"><img class="lazy-image" src="{{ asset('public/assets/images/background/tiger.jpg') }}" data-src="{{ asset('public/assets/images/mptfs-imgs/Training-n-Research-2-Cut-Vertically.jpg') }}" alt=""></div>
+                                            <div class="image wow fadeInLeft" data-wow-delay="0ms"><img class="lazy-image" src="{{ asset('public/assets/images/mptfs-imgs/Training-n-Research-2-Cut-Vertically.webp') }}" data-src="{{ asset('public/assets/images/mptfs-imgs/Training-n-Research-2-Cut-Vertically.webp') }}" alt=""></div>
                                         </div>
                                     </div>
                                 </div>

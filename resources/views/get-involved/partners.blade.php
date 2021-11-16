@@ -4,13 +4,13 @@
 
 @push('css')
     <style>
-        .top-right {
+        /* .top-right {
             display: none;
-        }
+        } */
 
-        .top-left {
+        /* .top-left {
             float: right !important;
-        }
+        } */
 
         :root {
             --minimum-width: 300px;
@@ -46,13 +46,13 @@
 
         <!-- Page Banner Section -->
         <section class="page-banner">
-            <div class="image-layer lazy-image" data-bg="url('../public/assets/images/mptfs-imgs/Partners-Banner.jpg')"></div>
+            <div class="image-layer lazy-image" data-bg="url('../public/assets/images/mptfs-imgs/Partners-Banner.webp')"></div>
             <div class="bottom-rotten-curve"></div>
 
             <div class="auto-container">
                 <h1>{{__('involved.partners_heading')}}</h1>
                 <ul class="bread-crumb clearfix">
-                    <li><a href="#">{{__('involved.home')}}</a></li>
+                    <li><a href="{{ route('mptfs.home') }}">{{__('involved.home')}}</a></li>
                     <li class="active">{{__('involved.partners_heading')}}</li>
                 </ul>
             </div>
@@ -92,8 +92,13 @@
 
                 <div class="title-box clearfix">
                     <div class="sec-title">
-                        {{-- <div class="sub-title">Our Partners</div> --}}
-                        <h2>Our Partners</h2>
+                        @if (session('locale') == 'en')
+                            <h2>Our Partners</h2>
+                        @endif
+
+                        @if (session('locale') == 'hi')
+                            <h2>हमारे सहयोगी</h2>
+                        @endif
                     </div>
                 </div>
 

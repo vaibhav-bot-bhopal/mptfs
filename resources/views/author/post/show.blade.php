@@ -125,7 +125,13 @@
                         </div>
                         <!-- /.card-header -->
                         <div class="card-body">
-                            <img class="img-fluid img-thumbnail" src="{{asset('storage/app/public/post/'.$post->image)}}" alt="Featured-Image">
+                            @if (session('locale') == 'en')
+                                <img class="img-fluid img-thumbnail" src="{{asset('storage/app/public/post/'.$post->image)}}" alt="Featured-Image">
+                            @endif
+
+                            @if (session('locale') == 'hi')
+                            <img class="img-fluid img-thumbnail" src="{{asset('storage/app/public/post-hindi/'.$post->image)}}" alt="Featured-Image">
+                            @endif
                         </div>
                         <!-- /.card-body -->
                     </div>
