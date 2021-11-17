@@ -31,7 +31,7 @@
 
 <body>
 
-    <!-- Start Page Wrappe -->
+    <!-- Start Page Wrapper -->
     <div class="page-wrapper">
 
         @include('layouts.frontend.partial.header')
